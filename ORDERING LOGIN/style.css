@@ -6,7 +6,7 @@
 .hero{
 	width: 100%;
 	height:100%;
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.jpg);
+	background-image: linear-gradient(hsla(0, 100%, 100%, 0.3),hsla(0, 100%, 100%, 0.3)),url(background.jpg);
 	background-size: cover;
 	background-position: center;
 	position: absolute;
@@ -24,7 +24,7 @@
 	width:220px;
 	margin: 35px auto;
 	position: relative;
-	box-shadow: 0 0 20px 9px #ff61241f;
+	box-shadow: 0 0 20px 9px #e3fde4;
 	border-radius: 30px;
 }
 .toggle-btn{
@@ -41,21 +41,21 @@
 	position: absolute;
 	width:110px;
 	height:100%;
-	background: linear-gradient(to right, #ff105f, #ffad06);
+	background: linear-gradient(to right, #39e75f, #cefad0);
 	border-radius: 30px;
 	transition: .5s;
 }
-.social-icons{
+
+.logo{
 	margin: 30px auto;
 	text-align: center;
 }
-.social-icons img{
-	width: 30px ;
-	margin:0 12px;
-	box-shadow: 0 0 20px 0 #7f7f7f3d;
-	cursor: pointer;
-	border-radius: 50%;
+
+.logo img{
+	width: 200px;
+	
 }
+
 .input-group{
 	top: 180px;
 	position:absolute;
@@ -79,7 +79,7 @@
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: linear-gradient(to right, #ff105f, #ffad06);
+	background: linear-gradient(to right, #39e75f, #cefad0);
 	border: 0;
 	outline: none;
 	border-radius: 30px;
@@ -95,10 +95,10 @@ span{
 	position: absolute;
 }
 #login{
-	left: 650px;
+	left: 50px;
 }
 #register{
-	left: 1000px;
+	left: 450px;
 }
 
 
