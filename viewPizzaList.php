@@ -60,9 +60,9 @@
             
                 echo '<div class="col-xs-3 col-sm-3 col-md-3">
                         <div class="card" style="width: 18rem;">
-                            <img src="img/pizza-'.$pizzaId. '.jpg" class="card-img-top" alt="image for this pizza" width="249px" height="270px">
+                            <img src="img/food-'.$pizzaId. '.jpg" class="card-img-top" alt="image for this pizza" width="249px" height="270px">
                             <div class="card-body">
-                                <h5 class="card-title">' . substr($pizzaName, 0, 20). '...</h5>
+                                <h5 class="card-title">' . substr($pizzaName, 0, 10). '...</h5>
                                 <h6 style="color: #ff0000">Rs. '.$pizzaPrice. '/-</h6>
                                 <p class="card-text">' . substr($pizzaDesc, 0, 29). '...</p>   
                                 <div class="row justify-content-center">';
