@@ -60,6 +60,6 @@
 <?php
     }
     else{
-        header("location: /OnlinePizzaDelivery/admin/login.php");
+        header("location: /DailyFreshOrderingSystem/admin/login.php");
     }
 ?>

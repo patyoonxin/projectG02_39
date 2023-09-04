@@ -17,19 +17,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION['adminloggedin'] = true;
                 $_SESSION['adminusername'] = $username;
                 $_SESSION['adminuserId'] = $userId;
-                header("location: /OnlinePizzaDelivery/admin/index.php?loginsuccess=true");
+                header("location: /DailyFreshOrderingSystem/admin/index.php?loginsuccess=true");
                 exit();
             } 
             else{
-                header("location: /OnlinePizzaDelivery/admin/login.php?loginsuccess=false");
+                header("location: /DailyFreshOrderingSystem/admin/login.php?loginsuccess=false");
             }
         }
         else {
-            header("location: /OnlinePizzaDelivery/admin/login.php?loginsuccess=false");
+            header("location: /DailyFreshOrderingSystem/admin/login.php?loginsuccess=false");
         }
     } 
     else{
-        header("location: /OnlinePizzaDelivery/admin/login.php?loginsuccess=false");
+        header("location: /DailyFreshOrderingSystem/admin/login.php?loginsuccess=false");
     }
 }    
 ?>
