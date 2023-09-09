@@ -19,6 +19,9 @@
                   <input class="form-control" id="loginpassword" name="loginpassword" placeholder="Enter Your Password" type="password" required data-toggle="password">
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
+			  
+			  <a href="passwordReset.php" class="float-end">Forgot Your Password?</a>
+			  </div>
             </form>
             <p class="mb-0 mt-1">Don't have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">Sign up now</a>.</p>
           </div>
