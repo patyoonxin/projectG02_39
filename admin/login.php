@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Login</title>
-    <link rel = "icon" href ="/OnlinePizzaDelivery/img/logo.jpg" type = "image/x-icon">
+    <link rel = "icon" href ="/DailyFreshOrderingSystem/img/logo.jpg" type = "image/x-icon">
 
 <style>
     body{
@@ -64,7 +64,7 @@
     <main id="main" class=" bg-dark">
         <div id="login-left">
         <div class="logo">
-            <img src="/OnlinePizzaDelivery/img/sample_logo.png" alt="">
+            <img src="/DailyFreshOrderingSystem/img/sample_logo.png" alt="">
         </div>
         </div>
         <div id="login-right">
@@ -78,6 +78,7 @@
                 <div class="form-group">
                 <label for="password" class="control-label"><b>Password</b></label>
                 <input type="password" id="password" name="password" class="form-control">
+				<a href="passwordReset.php" class="float-end">Forgot Your Password?</a>
                 </div>
                 <center><button type="submit" class="btn-sm btn-block btn-wave col-md-4 btn-primary">Login</button></center>
             </form>
