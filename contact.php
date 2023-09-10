@@ -166,7 +166,7 @@
                                 <b><label for="phone">Phone No:</label></b>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text" id="basic-addon">+91</span>
+                                      <span class="input-group-text" id="basic-addon">+60</span>
                                     </div>
                                     <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="basic-addon" placeholder="Enter Your Phone Number" required pattern="[0-9]{10}" value="<?php echo $phone ?>">
                                 </div>

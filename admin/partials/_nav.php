@@ -4,7 +4,8 @@
         </div>
         
         <div class="header__img">
-            <img src="assetsForSideBar/img/perfil.jpg" alt="">
+            <a href="viewProfile.php"><img src="assetsForSideBar/img/perfil.jpg" alt=""></a>
+			
         </div>
     </header>
 
@@ -13,7 +14,7 @@
             <div>
                 <a href="index.php" class="nav__logo">
                     <i class='bx bx-layer nav__logo-icon'></i>
-                    <span class="nav__logo-name">Pizza Delivery</span>
+                    <span class="nav__logo-name">Daily Fresh</span>
                 </a>
 
                 <div class="nav__list">
@@ -35,7 +36,7 @@
                     </a>
                     <a href="index.php?page=contactManage" class="nav__link nav-contactManage">
                       <i class="fas fa-hands-helping"></i>
-                      <span class="nav__name">contact Info</span>
+                      <span class="nav__name">Contact Info</span>
                     </a>
                     <a href="index.php?page=userManage" class="nav__link nav-userManage">
                       <i class='bx bx-user nav__icon' ></i>

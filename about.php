@@ -38,7 +38,7 @@
             <div class="carousel-background"><img src="assets/img/slide/slide-1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Pizza World</span></h2>
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Daily Fresh</span></h2>
                 <a href="index.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
               </div>
             </div>
@@ -92,8 +92,8 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <h3>Welcome to <strong>Pizza World</strong></h3>
-            <h3><strong>The Worldwide Leader in Pizza Delivery</strong></h3>
+            <h3>Welcome to <strong>Daily Fresh</strong></h3>
+            <h3><strong>The Worldwide Leader in Sweet Corn Malaysia</strong></h3>
             <p class="font-italic">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -198,7 +198,7 @@
               <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Darshan Parmar</h4>
+                  <h4>Pat Yoon Xin</h4>
                 </div>
                 <div class="social">
                   <a href="https://twitter.com/darshankparmar" target="_blank"><i class="icofont-twitter"></i></a>
@@ -214,7 +214,7 @@
               <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Harsh Patel</h4>
+                  <h4>Zuu</h4>
                 </div>
                 <div class="social">
                   <a href=""><i class="icofont-twitter" target="_blank"></i></a>
@@ -230,7 +230,7 @@
               <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="" style="height: 198px;width: 198px;">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Bhavesh Parmar</h4>
+                  <h4>Allea</h4>
                 </div>
                 <div class="social">
                   <a href=""><i class="icofont-twitter" target="_blank"></i></a>

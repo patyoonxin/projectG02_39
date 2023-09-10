@@ -126,8 +126,9 @@
 </head>
 <body>
     <?php include 'partials/_dbconnect.php';?>
-    <?php require 'partials/_nav.php' ?>
-    <?php
+   
+    
+	<?php
         if($loggedin) {
     ?>
     

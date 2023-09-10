@@ -15,15 +15,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $username;
             $_SESSION['userId'] = $userId;
-            header("location: /OnlinePizzaDelivery/index.php?loginsuccess=true");
+            header("location: /DailyFreshOrderingSystem/index.php?loginsuccess=true");
             exit();
         } 
         else{
-            header("location: /OnlinePizzaDelivery/index.php?loginsuccess=false");
+            header("location: /DailyFreshOrderingSystem/index.php?loginsuccess=false");
         }
     } 
     else{
-        header("location: /OnlinePizzaDelivery/index.php?loginsuccess=false");
+        header("location: /DailyFreshOrderingSystem/index.php?loginsuccess=false");
     }
 }    
 ?>

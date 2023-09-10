@@ -50,7 +50,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           </li>
           
         </ul>
-        <form method="get" action="/OnlinePizzaDelivery/search.php" class="form-inline my-2 my-lg-0 mx-3">
+        <form method="get" action="/DailyFreshOrderingSystem/search.php" class="form-inline my-2 my-lg-0 mx-3">
           <input class="form-control mr-sm-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search" required>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>';
