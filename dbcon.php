@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","phptutorials");
+$con = mysqli_connect("localhost","root","","OPD");
 
 
 ?>
