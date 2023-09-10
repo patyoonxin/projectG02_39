@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $numExistRows = mysqli_num_rows($result);
     if($numExistRows > 0){
         $showError = "Username Already Exists";
-        header("Location: /OnlinePizzaDelivery/index.php?signupsuccess=false&error=$showError");
+        header("Location: /DailyFreshOrderingSystem/index.php?signupsuccess=false&error=$showError");
     }
     else{
       if(($password == $cpassword)){
@@ -25,12 +25,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           $result = mysqli_query($conn, $sql);
           if ($result){
               $showAlert = true;
-              header("Location: /OnlinePizzaDelivery/index.php?signupsuccess=true");
+              header("Location: /DailyFreshOrderingSystem/index.php?signupsuccess=true");
           }
       }
       else{
           $showError = "Passwords do not match";
-          header("Location: /OnlinePizzaDelivery/index.php?signupsuccess=false&error=$showError");
+          header("Location: /DailyFreshOrderingSystem/index.php?signupsuccess=false&error=$showError");
       }
     }
 }
