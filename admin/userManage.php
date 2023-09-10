@@ -43,7 +43,7 @@
 
                                 echo '<tr>
                                     <td>' .$Id. '</td>
-                                    <td><img src="/OnlinePizzaDelivery/img/person-' .$Id. '.jpg" alt="image for this user" onError="this.src =\'/OnlinePizzaDelivery/img/profilePic.jpg\'" width="100px" height="100px"></td>
+                                    <td><img src="/DailyFreshOrderingSystem/img/person-' .$Id. '.jpg" alt="image for this user" onError="this.src =\'/DailyFreshOrderingSystem/img/profilePic.jpg\'" width="100px" height="100px"></td>
                                     <td>' .$username. '</td>
                                     <td>
                                         <p>First Name : <b>' .$firstName. '</b></p>
@@ -112,7 +112,7 @@
                         <b><label for="phone">Phone No:</label></b>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon">+91</span>
+                                <span class="input-group-text" id="basic-addon">+60</span>
                             </div>
                             <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone No" required pattern="[0-9]{10}" maxlength="10">
                         </div>
@@ -177,7 +177,7 @@
                     </form>         
                 </div>
                 <div class="form-group col-md-4">
-                    <img src="/OnlinePizzaDelivery/img/person-<?php echo $Id; ?>.jpg" alt="Profile Photo" width="100" height="100" onError="this.src ='/OnlinePizzaDelivery/img/profilePic.jpg'">
+                    <img src="/DailyFreshOrderingSystem/img/person-<?php echo $Id; ?>.jpg" alt="Profile Photo" width="100" height="100" onError="this.src ='/DailyFreshOrderingSystem/img/profilePic.jpg'">
                     <form action="partials/_userManage.php" method="post">
                         <input type="hidden" id="userId" name="userId" value="<?php echo $Id; ?>">
                         <button type="submit" class="btn btn-success mt-2" name="removeProfilePhoto">Remove Img</button>
@@ -209,7 +209,7 @@
                         <b><label for="phone">Phone No:</label></b>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon">+91</span>
+                                <span class="input-group-text" id="basic-addon">+60</span>
                             </div>
                             <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $phone; ?>" required pattern="[0-9]{10}" maxlength="10">
                         </div>

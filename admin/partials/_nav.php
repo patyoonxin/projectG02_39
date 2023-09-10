@@ -1,11 +1,11 @@
-    <header class="header" id="header">
+ <header class="header" id="header">
         <div class="header__toggle">
             <i class='bx bx-menu' id="header-toggle"></i>
         </div>
         
         <div class="header__img">
-            <a href="viewProfile.php"><img src="assetsForSideBar/img/perfil.jpg" alt=""></a>
-			
+          
+			<a href="viewProfile.php"><img src="assetsForSideBar/img/perfil.jpg" alt=""></a>
         </div>
     </header>
 
@@ -54,6 +54,8 @@
             </a>
         </nav>
     </div>  
+	
+
     
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>

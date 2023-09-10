@@ -81,7 +81,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         if($check !== false) {
             $newfilename = "person-".$id.".jpg";
 
-            $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/OnlinePizzaDelivery/img/';
+            $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/DailyFreshOrderingSystem/img/';
             $uploadfile = $uploaddir . $newfilename;
 
             if (move_uploaded_file($_FILES['userimage']['tmp_name'], $uploadfile)) {
@@ -103,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if(isset($_POST['removeProfilePhoto'])) {
         $id = $_POST["userId"];
-        $filename = $_SERVER['DOCUMENT_ROOT']."/OnlinePizzaDelivery/img/person-".$id.".jpg";
+        $filename = $_SERVER['DOCUMENT_ROOT']."/DailyFreshOrderingSystem/img/person-".$id.".jpg";
         if (file_exists($filename)) {
             unlink($filename);
             echo "<script>alert('Removed');
