@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             $check = getimagesize($_FILES["image"]["tmp_name"]);
             if($check !== false) {
                 
-                $newName = 'pizza-'.$pizzaId;
+                $newName = 'food-'.$pizzaId;
                 $newfilename=$newName .".jpg";
 
                 $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/DailyFreshOrderingSystem/img/';
@@ -88,7 +88,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $pizzaId = $_POST["pizzaId"];
         $check = getimagesize($_FILES["itemimage"]["tmp_name"]);
         if($check !== false) {
-            $newName = 'pizza-'.$pizzaId;
+            $newName = 'food-'.$pizzaId;
             $newfilename=$newName .".jpg";
 
             $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/DailyFreshOrderingSystem/img/';
