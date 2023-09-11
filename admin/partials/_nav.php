@@ -4,8 +4,7 @@
         </div>
         
         <div class="header__img">
-          
-			<a href="viewProfile.php"><img src="assetsForSideBar/img/perfil.jpg" alt=""></a>
+			<a href="viewProfile.php"><img src="assetsForSideBar/img/person-<?php echo $userId; ?>.jpg" onError="this.src = 'assetsForSideBar/img/profilePic.jpg'"></a>
         </div>
     </header>
 
@@ -54,9 +53,10 @@
             </a>
         </nav>
     </div>  
-	
 
-    
+  
+	
+	
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
     <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>

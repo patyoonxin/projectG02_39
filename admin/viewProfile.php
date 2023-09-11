@@ -129,7 +129,17 @@
    
     
 	<?php
-        if($loggedin) {
+        session_start();
+    if(isset($_SESSION['adminloggedin']) && $_SESSION['adminloggedin']==true){
+        $adminloggedin= true;
+        $userId = $_SESSION['adminuserId'];
+    }
+    else{
+        $adminloggedin = false;
+        $userId = 0;
+    }
+		
+		if($adminloggedin) {
     ?>
     
     <div class="container">
@@ -143,18 +153,18 @@
             $email = $row['email'];
             $phone = $row['phone'];
             $userType = $row['userType'];
-            if($userType == 0) {
-                $userType = "User";
+            if($userType == 1) {
+                $userType = "Admin";
             }
             else {
-                $userType = "Admin";
+                $userType = "User";
             }
 
         ?>
         <div class="row">
             <div class="jumbotron p-3 mb-3" style="display: flex;justify-content: center;width: 28%;border-radius: 50px;margin: 0 auto;">
                 <div class="user-info">
-                    <img class="rounded-circle mb-3 bg-dark" src="img/person-<?php echo $userId; ?>.jpg" onError="this.src = 'img/profilePic.jpg'" style="width:215px;height:215px;padding:1px;">
+                    <img class="rounded-circle mb-3 bg-dark" src="assetsForSideBar/img/person-<?php echo $userId; ?>.jpg" onError="this.src = 'assetsForSideBar/img/profilePic.jpg'" style="width:215px;height:215px;padding:1px;">
                     <form action="partials/_manageProfile.php" method="POST">
                         <small>Remove Image: </small><button type="submit" class="btn btn-primary" name="removeProfilePic" style="font-size: 12px;padding: 3px 8px;border-radius: 9px;">remove</button>
                     </form>

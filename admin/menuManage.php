@@ -84,7 +84,7 @@
                                     echo '<tr>
                                             <td class="text-center">' .$pizzaCategorieId. '</td>
                                             <td>
-                                                <img src="/DailyFreshOrderingSystem/img/pizza-'.$pizzaId. '.jpg" alt="image for this item" width="150px" height="150px">
+                                                <img src="/DailyFreshOrderingSystem/img/food-'.$pizzaId. '.jpg" alt="image for this item" width="150px" height="150px">
                                             </td>
                                             <td>
                                                 <p>Name : <b>' .$pizzaName. '</b></p>

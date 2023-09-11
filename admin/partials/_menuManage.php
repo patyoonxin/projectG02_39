@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 $newName = 'pizza-'.$pizzaId;
                 $newfilename=$newName .".jpg";
 
-                $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/OnlinePizzaDelivery/img/';
+                $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/DailyFreshOrderingSystem/img/';
                 $uploadfile = $uploaddir . $newfilename;
 
                 if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile)) {
@@ -49,7 +49,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $pizzaId = $_POST["pizzaId"];
         $sql = "DELETE FROM `pizza` WHERE `pizzaId`='$pizzaId'";   
         $result = mysqli_query($conn, $sql);
-        $filename = $_SERVER['DOCUMENT_ROOT']."/OnlinePizzaDelivery/img/pizza-".$pizzaId.".jpg";
+        $filename = $_SERVER['DOCUMENT_ROOT']."/DailyFreshOrderingSystem/img/pizza-".$pizzaId.".jpg";
         if ($result){
             if (file_exists($filename)) {
                 unlink($filename);
@@ -91,7 +91,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             $newName = 'pizza-'.$pizzaId;
             $newfilename=$newName .".jpg";
 
-            $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/OnlinePizzaDelivery/img/';
+            $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/DailyFreshOrderingSystem/img/';
             $uploadfile = $uploaddir . $newfilename;
 
             if (move_uploaded_file($_FILES['itemimage']['tmp_name'], $uploadfile)) {
