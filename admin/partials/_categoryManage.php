@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 
                 $newfilename = "card-".$catId.".jpg";
 
-                $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/OnlinePizzaDelivery/img/';
+                $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/DailyFreshOrderingSystem/img/';
                 $uploadfile = $uploaddir . $newfilename;
 
                 if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile)) {
@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     if(isset($_POST['removeCategory'])) {
         $catId = $_POST["catId"];
-        $filename = $_SERVER['DOCUMENT_ROOT']."/OnlinePizzaDelivery/img/card-".$catId.".jpg";
+        $filename = $_SERVER['DOCUMENT_ROOT']."/DailyFreshOrderingSystem/img/card-".$catId.".jpg";
         $sql = "DELETE FROM `categories` WHERE `categorieId`='$catId'";   
         $result = mysqli_query($conn, $sql);
         if ($result){
@@ -80,7 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             $newName = 'card-'.$catId;
             $newfilename=$newName .".jpg";
 
-            $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/OnlinePizzaDelivery/img/';
+            $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/DailyFreshOrderingSystem/img/';
             $uploadfile = $uploaddir . $newfilename;
 
             if (move_uploaded_file($_FILES['catimage']['tmp_name'], $uploadfile)) {

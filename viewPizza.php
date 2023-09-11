@@ -35,11 +35,11 @@
         <script> document.getElementById("title").innerHTML = "<?php echo $pizzaName; ?>"; </script> 
         <?php
         echo  '<div class="col-md-4">
-                <img src="img/pizza-'.$pizzaId. '.jpg" width="249px" height="262px">
+                <img src="img/food-'.$pizzaId. '.jpg" width="249px" height="262px">
             </div>
             <div class="col-md-8 my-4">
                 <h3>' . $pizzaName . '</h3>
-                <h5 style="color: #ff0000">Rs. '.$pizzaPrice. '/-</h5>
+                <h5 style="color: #ff0000">RM '.$pizzaPrice. '</h5>
                 <p class="mb-0">' .$pizzaDesc .'</p>';
 
                 if($loggedin){
