@@ -3,4 +3,4 @@
 $con = mysqli_connect("localhost","root","","OPD");
 
 
-?>
+?>  

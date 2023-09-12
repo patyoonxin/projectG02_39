@@ -39,7 +39,7 @@ function sendemail_verify("$id","$username","$firstName","$lastName","$email","$
 	<h2>You have registered with Daily Fresh Ordering System</h2>
 	<h5>Verify your email address to Login with the below given link</h5>
 	<br></br>
-	<a href = "https://localhost/DailyFreshOrderingSystem/verify-email.php?token=$verify_token"> Click Me </a>
+	<a href = "https://localhost/DailyFreshOrderingSystem/password_reset.php?token=$password_reset"> Click Me </a>
 	";
 	
 	$mail->Body = $email_template;
