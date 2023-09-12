@@ -26,8 +26,15 @@
   <body>
   <?php include 'partials/_dbconnect.php';?>
   <?php include 'partials/_nav.php';?>
+  <?php
+        
+		$sql = "SELECT * FROM `sitedetail`";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+
+        $systemName = $row['systemName'];
   
-      <!-- ======= Hero Section ======= -->
+        echo '<!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -38,7 +45,8 @@
             <div class="carousel-background"><img src="assets/img/slide/slide-1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Daily Fresh</span></h2>
+			 
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>'.$systemName.' </span></h2>
                 <a href="index.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
               </div>
             </div>
@@ -92,8 +100,8 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <h3>Welcome to <strong>Daily Fresh</strong></h3>
-            <h3><strong>The Worldwide Leader in Sweet Corn Malaysia</strong></h3>
+            <h3>Welcome to <strong>'.$systemName.' </strong></h3>
+            <h3><strong>The Worldwide Sweet Corn Manufacturer Leader in Malaysia</strong></h3>
             <p class="font-italic">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -138,7 +146,7 @@
           </div>
         </div>
       </div>
-    </section><!-- End About Us Section -->
+    </section><!-- End About Us Section -->';?>
 
     <!-- ======= Counts Section ======= -->
     <section class="counts section-bg">
