@@ -119,16 +119,20 @@
         <form action="partials/_userManage.php" method="post">
               <div class="form-group">
                   <b><label for="username">Username</label></b>
-                  <input class="form-control" id="username" name="username" placeholder="Choose a unique Username" type="text" required minlength="3" maxlength="11">
+                  <input class="form-control" id="username" name="username" placeholder="Choose a unique Username" type="text" required minlength="3" maxlength="11"
+				  required pattern="[A-Za-z0-9]+" pattern="[^\s]+">
+				  <span style="color:#777;font-size:12px;">*Usename cannot include spaces and symbols </span>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <b><label for="firstName">First Name:</label></b>
-                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
-                </div>
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required pattern="[A-Za-z ]+" required>
+                  <span style="color:#777;font-size:12px;">*First Name cannot include symbols </span>
+				</div>
                 <div class="form-group col-md-6">
                   <b><label for="lastName">Last name:</label></b>
-                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required>
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required pattern="[A-Za-z ]+" required>
+				  <span style="color:#777;font-size:12px;">*Last Name cannot include symbols </span>
                 </div>
               </div>
               <div class="form-group">
@@ -142,7 +146,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon">+60</span>
                             </div>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone No" required pattern="[0-9]{10}" maxlength="10">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone No" required pattern="[0-9]{9-10}" maxlength="10">
                         </div>
                     </div>
                     <div class="form-group col-md-6 my-0">
@@ -155,12 +159,13 @@
               </div>
               <div class="form-group">
                   <b><label for="password">Password:</label></b>
-                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required data-toggle="password" minlength="4" maxlength="21">
+                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="21">
               </div>
               <div class="form-group">
                   <b><label for="password1">Renter Password:</label></b>
-                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" required data-toggle="password" minlength="4" maxlength="21">
-              </div>
+                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="21">
+				  <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
+			  </div>
               <button type="submit" name="createUser" class="btn btn-success">Submit</button>
             </form>
       </div>
@@ -221,11 +226,13 @@
                 <div class="form-row">
                 <div class="form-group col-md-6">
                     <b><label for="firstName">First Name:</label></b>
-                    <input type="text" class="form-control" id="firstName" name="firstName" value="<?php echo $firstName; ?>" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" value="<?php echo $firstName; ?>" required pattern="[A-Za-z ]+" required>
+					<span style="color:#777;font-size:12px;">*First Name cannot include symbols </span>
                 </div>
                 <div class="form-group col-md-6">
                     <b><label for="lastName">Last name:</label></b>
-                    <input type="text" class="form-control" id="lastName" name="lastName" value="<?php echo $lastName; ?>" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" value="<?php echo $lastName; ?>" required pattern="[A-Za-z ]+" required>
+					<span style="color:#777;font-size:12px;">*Last Name cannot include symbols </span>
                 </div>
                 </div>
                 <div class="form-group">
@@ -239,7 +246,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon">+60</span>
                             </div>
-                            <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $phone; ?>" required pattern="[0-9]{10}" maxlength="10">
+                            <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $phone; ?>" required pattern="[0-9]{9-10}" maxlength="10">
                         </div>
                     </div>
                     <div class="form-group col-md-6 my-0">

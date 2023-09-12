@@ -12,11 +12,15 @@
             <form action="partials/_handleLogin.php" method="post">
               <div class="text-left my-2">
                   <b><label for="username">Username</label></b>
-                  <input class="form-control" id="loginusername" name="loginusername" placeholder="Enter Your Username" type="text" required>
+                  <input class="form-control" id="loginusername" name="loginusername" placeholder="Enter Your Username" type="text" required pattern="[A-Za-z0-9]+"
+				  pattern="[^\s]+" required>
+				  <span style="color:#777;font-size:12px;">*Usename cannot include spaces and symbols </span>
               </div>
               <div class="text-left my-2">
                   <b><label for="password">Password</label></b>
-                  <input class="form-control" id="loginpassword" name="loginpassword" placeholder="Enter Your Password" type="password" required data-toggle="password">
+                  <input class="form-control" id="loginpassword" name="loginpassword" placeholder="Enter Your Password" type="password" required data-toggle="password"
+				  pattern="[^\s]+">
+				  <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
 			  

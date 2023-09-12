@@ -183,17 +183,19 @@
                     <form action="partials/_manageProfile.php" method="post">
                         <div class="form-group">
                             <b><label for="username">Username:</label></b>
-                            <input class="form-control" id="username" name="username" type="text" disabled value="<?php echo $username ?>">
+                            <input class="form-control" id="username" name="username" type="text" disabled value="<?php echo $username ?>" required minlength="3" maxlength="11">
                         </div>
                         <div class="form-row">
                         <div class="form-group col-md-6">
                             <b><label for="firstName">First Name:</label></b>
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required value="<?php echo $firstName ?>">
-                        </div>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required value="<?php echo $firstName ?>" required pattern="[A-Za-z ]+">
+							<span style="color:#777;font-size:12px;">*First Name cannot include symbols </span>
+						</div>
                         <div class="form-group col-md-6">
                             <b><label for="lastName">Last Name:</label></b>
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required value="<?php echo $lastName ?>">
-                        </div>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required value="<?php echo $lastName ?>" required pattern="[A-Za-z ]+" >
+							<span style="color:#777;font-size:12px;">*Last Name cannot include symbols </span>
+						</div>
                         </div>
                         <div class="form-group">
                             <b><label for="email">Email:</label></b>
@@ -206,13 +208,14 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon">+60</span>
                                     </div>
-                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number" required pattern="[0-9]{10}" maxlength="10" value="<?php echo $phone ?>">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number" required pattern="[0-9]{9-10}" maxlength="10" value="<?php echo $phone ?>">
                                 </div>
                             </div>
                             <div class="form-group  col-md-6">
                                 <b><label for="password">Password:</label></b>    
-                                <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="21" data-toggle="password">
-                            </div>
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="21" data-toggle="password" pattern="[^\s]+">
+								<span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
+							</div>
                         </div>
                         <button type="submit" name="updateProfileDetail" class="btn btn-primary">Update</button>
                     </form>
@@ -235,7 +238,7 @@
             </div>';
         }
     ?>
-    <?php require 'partials/_footer.php' ?>
+  
     
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
