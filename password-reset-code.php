@@ -1,4 +1,5 @@
 <?php
+include('dbcon.php');
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -143,14 +144,14 @@ if(isset($_SESSION['password_update']))
 		else 
 		{
 			$_SESSION['status'] = "All Filed are Mandatory";
-			header("Location : password_change.php?key=$key&email=$email");
+			header("Location: password_change.php?key=$key&email=$email");
 			exit(0);
 		}
 	}
 	else
 	{
 		$_SESSION['status'] = "No Key Available";
-		header("Location : password_change.php");
+		header("Location: password_change.php");
 		exit(0);
 	}
 }	
