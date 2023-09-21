@@ -117,13 +117,13 @@ if(isset($_POST['password_update']))
 						$update_to_new_key_run= mysqli_query($con, $update_to_new_key);
 				
 						$_SESSION['status'] = "New Password Successfully updated!";
-						header("Location : index.php");
+						header("Location: index.php");
 						exit(0);
 					}
 					else
 					{
 						$_SESSION['status'] = "Did not update. Something went wrong.!";
-						header("Location : password_change.php?key=$key&email=$email");
+						header("Location: password_change.php?key=$key&email=$email");
 						exit(0);
 					}
 					
@@ -131,14 +131,14 @@ if(isset($_POST['password_update']))
 				else
 				{
 					$_SESSION['status'] = "Password and Confirm Password does not match";
-					header("Location : password_change.php?key=$key&email=$email");
+					header("Location: password_change.php?key=$key&email=$email");
 					exit(0);
 				}
 			}
 			else
 			{
 				$_SESSION['status'] = "Invalid Key";
-				header("Location : password_change.php?key=$key&email=$email");
+				header("Location: password_change.php?key=$key&email=$email");
 				exit(0);
 			}
 		}
