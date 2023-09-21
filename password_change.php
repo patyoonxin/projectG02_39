@@ -29,8 +29,8 @@ include('header.php');
 					</div>
 					<div class "card-body p-4">
 					
-						<form action = "index.php" method = "POST">
-							<input type = "hidden" name = "password_token" value =  "<?php if(isset($_GET['key'])){echo $_GET['key'];} ?>">
+						<form action = "password-reset-code.php" method = "POST">
+							<input type = "hidden" name = "password_key" value =  "<?php if(isset($_GET['key'])){echo $_GET['key'];} ?>">
 						
 							<div class = "form-group mb-3">
 								<label>Email Address</label>
