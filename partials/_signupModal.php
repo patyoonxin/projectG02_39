@@ -1,3 +1,4 @@
+
   <!-- Sign up Modal -->
     <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -9,7 +10,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="partials/_handleSignup.php" method="post">
+            <form action="\DailyFreshOrderingSystem\partials\code.php" method="post">
               <div class="form-group">
                   <b><label for="username">Username</label></b>
                   <input class="form-control" id="username" name="username" placeholder="Choose a unique Username" type="text" required pattern="[A-Za-z0-9]+" required minlength="3" maxlength="11"
@@ -54,9 +55,12 @@
 				 <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
 
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success" name="register_btn" >Submit</button>
             </form>
             <p class="mb-0 mt-1">Already have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login here</a>.</p>
+			Did not receive your verification Email?
+			<a href="resend-email-verification.php">Resend</a>
+			</p>
           </div>
         </div>
       </div>
