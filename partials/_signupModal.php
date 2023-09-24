@@ -23,7 +23,7 @@
             <form action="partials/code.php" method="post">
               <div class="form-group">
                   <b><label for="username">Username</label></b>
-                  <input class="form-control" id="username" name="username" placeholder="Choose a unique Username" type="text" required pattern="[A-Za-z0-9]+" required minlength="3" maxlength="11"
+                  <input class="form-control" id="username" name="username" placeholder="Choose an Unique Username" type="text" required pattern="[A-Za-z0-9]+" required minlength="3" maxlength="11"
 				  pattern="[^\s]+">
 				  <span style="color:#777;font-size:12px;">*Usename cannot include spaces and symbols </span>
               </div>

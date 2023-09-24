@@ -27,13 +27,15 @@
               <button type="submit" class="btn btn-success" name="login_now_btn">Submit</button>
 			  
 			  <a href="passwordReset.php">Forgot Your Password?</a>
+			  
 			  </div>
             </form>
 			
 			
 			
 			
-            <p class="mb-0 mt-1">Don't have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">Sign up now</a>.</p>
+			<p class="mb-0 mt-1">&nbsp Didn't receive verification email?<a href="resend-email-verification.php">Resend</a>.</p>
+            <p class="mb-0 mt-1">&nbsp Don't have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">Sign up now</a>.</p>
           </div>
         </div>
       </div>
