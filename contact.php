@@ -168,7 +168,7 @@
                                     <div class="input-group-prepend">
                                       <span class="input-group-text" id="basic-addon">+60</span>
                                     </div>
-                                    <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="basic-addon" placeholder="Enter Your Phone Number" required pattern="[0-9]{10}" value="<?php echo $phone ?>">
+                                    <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="basic-addon" placeholder="Enter Your Phone Number" required pattern="[0-9]{9-10}" value="<?php echo $phone ?>">
                                 </div>
                             </div>
                           </div>

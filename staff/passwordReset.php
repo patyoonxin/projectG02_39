@@ -3,11 +3,7 @@ session_start();
 
 $page_title = "Password Reset Form";
 include ('header.php');
-<<<<<<< Updated upstream
-include ('header.php');	//
-=======
-
->>>>>>> Stashed changes
+include ('header.php');
 ?>
 
 <div class="py-5">
@@ -33,7 +29,7 @@ include ('header.php');	//
 					</div>
 					<div class="card-body p-4">
 					
-						<form action="password-reset-code.php" method="POST">
+						<form action="password-reset-code.php" method="post">
 						
 							<div class="form-group mb-3">
 								<label>Email Address</label>
