@@ -10,7 +10,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $phone = $_POST["phone"];
     $password = $_POST["password"];
     $cpassword = $_POST["cpassword"];
-    // Check whether this username exists
+    
+	
+	/*// Check whether this username exists
     $existSql = "SELECT * FROM `users` WHERE username = '$username'";
     $result = mysqli_query($conn, $existSql);
     $numExistRows = mysqli_num_rows($result);
@@ -32,7 +34,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           $showError = "Passwords do not match";
           header("Location: /DailyFreshOrderingSystem/index.php?signupsuccess=false&error=$showError");
       }
-    }
+    }*/
+	
+	
 }
     
 ?>

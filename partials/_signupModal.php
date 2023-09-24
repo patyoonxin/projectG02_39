@@ -1,16 +1,26 @@
-
   <!-- Sign up Modal -->
     <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header" style="background-color: rgb(111 202 203);">
-            <h5 class="modal-title" id="signupModal">SignUp Here</h5>
+		  <div class="modal-header" style="background-color: rgb(111 202 203);">
+		  <!--<div class="alert">-->
+			<?php
+			if(isset($_SESSION['status']))
+			{
+				echo"<h4>".$_SESSION['status']."</h4>";
+				unset($_SESSION['status']);
+				echo"<br>";
+			}else{
+			
+            echo"<h5>SignUp Here</h5>";
+			}
+			?>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form action="\DailyFreshOrderingSystem\partials\code.php" method="post">
+            <form action="partials/code.php" method="post">
               <div class="form-group">
                   <b><label for="username">Username</label></b>
                   <input class="form-control" id="username" name="username" placeholder="Choose a unique Username" type="text" required pattern="[A-Za-z0-9]+" required minlength="3" maxlength="11"
@@ -58,9 +68,8 @@
               <button type="submit" class="btn btn-success" name="register_btn" >Submit</button>
             </form>
             <p class="mb-0 mt-1">Already have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login here</a>.</p>
-			Did not receive your verification Email?
-			<a href="resend-email-verification.php">Resend</a>
-			</p>
+			
+			
           </div>
         </div>
       </div>

@@ -15,6 +15,8 @@
                   <input class="form-control" id="loginusername" name="loginusername" placeholder="Enter Your Username" type="text" required pattern="[A-Za-z0-9]+"
 				  pattern="[^\s]+" required>
 				  <span style="color:#777;font-size:12px;">*Usename cannot include spaces and symbols </span>
+				  <!--<b><label for="email">Email:</label></b>
+                  <input type="email" class="form-control" id="email" name="loginemail" placeholder="Enter Your Email" required>-->
               </div>
               <div class="text-left my-2">
                   <b><label for="password">Password</label></b>
@@ -22,7 +24,7 @@
 				  pattern="[^\s]+">
 				  <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success" name="login_now_btn">Submit</button>
 			  
 			  <a href="passwordReset.php">Forgot Your Password?</a>
 			  </div>

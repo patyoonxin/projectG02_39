@@ -96,7 +96,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
     if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true") {
       echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-              <strong>Success!</strong> You can now login.
+              <strong>Success!</strong> Registration Successful! Please verify your Email Address.
               <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
             </div>';
     }
@@ -114,7 +114,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     }
     if(isset($_GET['loginsuccess']) && $_GET['loginsuccess']=="false"){
       echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-              <strong>Warning!</strong> Invalid Credentials
+              <strong>Warning!</strong> Invalid Credentials or Please Verify Your Email Before Login.
               <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
             </div>';
     }
