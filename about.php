@@ -42,7 +42,7 @@
         <div class="carousel-inner" role="listbox">
           <!-- Slide 1 -->
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="assets/img/slide/slide-1.jpg" alt=""></div>
+            <div class="carousel-background"><img src="assets/img/slide/depan.jpg" alt="" style="height: 960px;width: 960px;" ></div>
             <div class="carousel-container">
               <div class="carousel-content">
 			 
@@ -64,7 +64,7 @@
           </div>
           <!-- Slide 3 -->
           <div class="carousel-item">
-            <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
+            <div class="carousel-background"><img src="assets/img/slide/tiga.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown mb-0">Up to 100 of choices</h2>
@@ -101,7 +101,9 @@
         <div class="row">
           <div class="col-lg-6">
             <h3>Welcome to <strong>'.$systemName.' </strong></h3>
-            <h3><strong>The Worldwide Sweet Corn Manufacturer Leader in Malaysia</strong></h3>
+			<br>
+            <h3><strong>Convinient, Healthy and Trendy 
+			<br><p>Dessert for You</p></strong></h3>
             <p class="font-italic">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -199,56 +201,93 @@
           <h2>Our Team</h2>
         </div>
 
-        <div class="row" style="padding-left: 228px;">
+        <div class="row" style="padding-left: 280px;">
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+         <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/leader.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Pat Yoon Xin</h4>
+                  <h4>Leader</h4>
+				  <hr>
+				   <h4>Yoon Xin</h4>
                 </div>
-                <div class="social">
-                  <a href="https://twitter.com/darshankparmar" target="_blank"><i class="icofont-twitter"></i></a>
-                  <a href="https://github.com/darshankparmar" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/darshankparmar/" target="_blank"><i class="icofont-linkedin" target="_blank"></i></a>
-                </div>
+               
+
               </div>
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+          <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.2s">
             <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/team-8.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Zuu</h4>
+                  <h4>Front-Chef</h4>
+				  <hr>
+				  <h4>Nurzulaikha</h4>
                 </div>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter" target="_blank"></i></a>
-                  <a href="https://github.com/7Har" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href=""><i class="icofont-linkedin" target="_blank"></i></a>
-                </div>
+               
               </div>
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+          <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.2s">
             <div class="member">
-              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="" style="height: 198px;width: 198px;">
+              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Allea</h4>
+                 <h4>Back-Chef</h4>
+				 <hr>
+				 <h4>Allea</h4>
                 </div>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter" target="_blank"></i></a>
-                  <a href="https://github.com/Blparmar007" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href=""><i class="icofont-linkedin" target="_blank"></i></a>
-                </div>
+               
               </div>
             </div>
           </div>
+		 </div>
+		<div class="row" style="padding-left: 280px;">
 
+         <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="assets/img/team/team-9.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Co-Leader</h4>
+				  <hr>
+				  <h4>Zulaikha</h4>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+			<div class="col-xl-3 col-lg- col-md-6" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="assets/img/team/amirul.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Staff</h4>
+				  <hr>
+				  <h4>Amirul</h4>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+		  <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="assets/img/team/iman.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Staff</h4>
+				  <hr>
+				  <h4>Iman</h4>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </section><!-- End Our Team Section -->

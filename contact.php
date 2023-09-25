@@ -223,11 +223,10 @@
                             <h5 class="text-white font-weight-light mb-3 mt-4">CALL US</h5>
                             <p class="text-white op-7">' .$contact1. '
                               <br> ' .$contact2. '</p>
-                            <div class="round-social light">
-                              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=' .$email. '" class="ml-0 text-decoration-none text-white border border-white rounded-circle" target="_blank"><i class="far fa-envelope"></i></a>
-                              <a href="https://github.com/darshankparmar" class="text-decoration-none text-white border border-white rounded-circle" target="_blank"><i class="fab fa-github"></i></i></a>
-                              <a href="https://youtube.com/" class="text-decoration-none text-white border border-white rounded-circle" target="_blank"><i class="fab fa-youtube"></i></a>
-                            </div>
+							  <h5 class="text-white font-weight-light mb-3 mt-4">WORKING HOURS</h5>
+                            <p class="text-white op-7">
+                              09:30 am - 10:00 pm</p>
+                           
                           </div>
                         </div>';
                   ?>
