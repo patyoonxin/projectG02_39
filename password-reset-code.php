@@ -75,6 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     $mail->send();
                     echo "<script>alert('An email has been sent. Please check your email');</script>";
+					//header("Location: index.php");
                 } catch (Exception $e) {
                     echo "Mailer Error: " . $mail->ErrorInfo;
                 }

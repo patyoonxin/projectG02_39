@@ -3,11 +3,8 @@ session_start();
 
 $page_title = "Password Reset Form";
 include ('header.php');
-<<<<<<< Updated upstream
-include ('header.php');	//
-=======
+include ('header.php');	
 
->>>>>>> Stashed changes
 ?>
 
 <div class="py-5">

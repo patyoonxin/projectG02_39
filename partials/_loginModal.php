@@ -34,7 +34,7 @@
 			
 			
 			
-			<p class="mb-0 mt-1">&nbsp Didn't receive verification email?<a href="resend-email-verification.php">Resend</a>.</p>
+			<p class="mb-0 mt-1">&nbsp Didn't receive verification email? <a href="resend-email-verification.php">Resend</a>.</p>
             <p class="mb-0 mt-1">&nbsp Don't have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">Sign up now</a>.</p>
           </div>
         </div>

@@ -30,9 +30,7 @@ include('header.php'); // Include your header file
                             <input type="hidden" name="password_key" value="<?php if (isset($_GET['key'])) {
                                                                                 echo $_GET['key'];
                                                                             } ?>">
-                            <input type="hidden" name="email" value="<?php if (isset($_GET['email'])) {
-                                                                        echo $_GET['email'];
-                                                                    } ?>">
+                            
 
                             <div class="form-group mb-3">
                                 <label>Email Address</label>
