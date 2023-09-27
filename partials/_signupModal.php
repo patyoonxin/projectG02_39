@@ -55,14 +55,14 @@
               </div>
               <div class="text-left my-2">
                   <b><label for="password">Password:</label></b>
-                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required data-toggle="password" minlength="4" maxlength="21"
+                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required data-toggle="password" minlength="4" maxlength="14"
 				  pattern="[^\s]+">
               </div>
               <div class="text-left my-2">
                   <b><label for="password1">Renter Password:</label></b>
-                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" required data-toggle="password" minlength="4" maxlength="21"
+                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" required data-toggle="password" minlength="4" maxlength="14"
 				  pattern="[^\s]+">
-				 <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
+				 <span style="color:#777;font-size:12px;">*Password cannot include spaces and should be 4-14 length long</span>
 
               </div>
               <button type="submit" class="btn btn-success" name="register_btn" >Submit</button>

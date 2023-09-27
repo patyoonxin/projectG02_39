@@ -21,8 +21,8 @@
               <div class="text-left my-2">
                   <b><label for="password">Password</label></b>
                   <input class="form-control" id="loginpassword" name="loginpassword" placeholder="Enter Your Password" type="password" required data-toggle="password"
-				  pattern="[^\s]+">
-				  <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
+				  minlength="4" maxlength="14" pattern="[^\s]+">
+				  <span style="color:#777;font-size:12px;">*Password cannot include spaces and should be 4-14 length long</span>
               </div>
               <button type="submit" class="btn btn-success" name="login_now_btn">Submit</button>
 			  
