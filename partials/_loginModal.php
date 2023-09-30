@@ -26,7 +26,7 @@
               </div>
               <button type="submit" class="btn btn-success" name="login_now_btn">Submit</button>
 			  
-			  <a href="passwordReset.php">Forgot Your Password?</a>
+			  <a href="forgot_pass.php">Forgot Your Password?</a>
 			  
 			  </div>
             </form>
