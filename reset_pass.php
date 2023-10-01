@@ -59,25 +59,36 @@ $error = "";
                     }
 
                     if (isset($_POST["email"]) && isset($_POST["action"]) && ($_POST["action"] == "update")) {
-                        $error = "";
-                        $pass1 = mysqli_real_escape_string($con, $_POST["pass1"]);
-                        $pass2 = mysqli_real_escape_string($con, $_POST["pass2"]);
-                        $email = $_POST["email"];
-                        $curDate = date("Y-m-d H:i:s");
-                        if ($pass1 != $pass2) {
-                            $error .= "<p>Passwords do not match, both passwords should be the same.<br /><br /></p>";
-                        }
-                        if ($error != "") {
-                            echo $error;
-                        } else {
-                            $pass1 = md5($pass1);
-                            $results = mysqli_query($con, "UPDATE `users` SET `password` = '$pass1' WHERE `email` = '$email'");
-							$con -> result;
-                            mysqli_query($con, "DELETE FROM `password_reset_temp` WHERE `email` = '$email'");
-                            echo "<script>alert('Congratulations! Your password has been updated successfully.');</script>";
-                            header('location: index.php');
-                        }
-                    }
+						$error = "";
+						$pass1 = mysqli_real_escape_string($con, $_POST["pass1"]);
+						$pass2 = mysqli_real_escape_string($con, $_POST["pass2"]);
+						$email = $_POST["email"];
+						$curDate = date("Y-m-d H:i:s");
+						
+						if ($pass1 != $pass2) {
+							$error .= "<p>Passwords do not match, both passwords should be the same.<br /><br /></p>";
+						}
+						
+						if ($error != "") {
+							echo $error;
+						} else {
+							// Hash the password using bcrypt
+							$hashedPassword = password_hash($pass1, PASSWORD_BCRYPT);
+							
+							// Update the password in the database
+							$stmt = $con->prepare("UPDATE `users` SET `password` = ? WHERE `email` = ?");
+							$stmt->bind_param("ss", $hashedPassword, $email);
+							$stmt->execute();
+							$stmt->close();
+
+							// Delete password reset token from the temporary table
+							mysqli_query($con, "DELETE FROM `password_reset_temp` WHERE `email` = '$email'");
+
+							echo "<script>alert('Congratulations! Your password has been updated successfully.');</script>";
+							header('location: index.php');
+						}
+					}
+
                     ?>
 
                 </div>
