@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 23, 2023 at 09:52 PM
+-- Generation Time: Oct 01, 2023 at 04:44 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -40,14 +40,14 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categorieId`, `categorieName`, `categorieDesc`, `categorieCreateDate`) VALUES
-(1, 'CLASSIC SWEET', 'A delight for veggie lovers! Choose from our wide range of delicious vegetarian pizzas, it\'s softer and tastier', '2021-03-17 18:16:28'),
-(2, 'WAFITO', 'Choose your favourite non-veg pizzas from the Domino\'s Pizza menu. Get fresh non-veg pizza with your choice of crusts & toppings', '2021-03-17 18:17:14'),
-(3, 'SWEET CORN', 'Indulge into mouth-watering taste of Pizza mania range, perfect answer to all your food cravings', '2021-03-17 18:17:43'),
-(4, 'GELATO TEMPO', 'Complement your pizza with wide range of sides available at Domino\'s Pizza India', '2021-03-17 18:19:10'),
-(5, 'KORNJUZ', 'Complement your pizza with wide range of beverages available at Domino\'s Pizza India', '2021-03-17 21:58:58'),
-(6, 'BLENDED SERIES', 'Fresh Pan Pizza Tastiest Pan Pizza. ... Domino\'s freshly made pan-baked pizza; deliciously soft ,buttery,extra cheesy and delightfully crunchy.', '2021-03-18 07:55:28'),
-(7, 'COLD DRINKS', 'Domino’s Pizza Introducing all new Burger Pizza with the tag line looks like a burger, tastes like a pizza. Burger Pizza is burger sized but comes in a small pizza box. It is come with pizza toppings such as herbs, vegetables, tomato sauce and mozzarella,', '2021-03-18 08:06:30'),
-(8, 'HOT DRINKS', 'CHOICE OF TOPPINGS', '2021-03-18 08:13:47');
+(1, 'CLASSIC SWEET', 'The Classic one for you', '2021-03-17 18:16:28'),
+(2, 'WAFITO', 'a delightful creation that marries the beloved aspects of waffles and burritos, is a portable and indulgent culinary treat', '2021-03-17 18:17:14'),
+(3, 'SWEET CORN', 'the peak of ripeness, sweet corn offers a burst of flavor that instantly evokes the essence of summertime', '2021-03-17 18:17:43'),
+(4, 'GELATO TEMPO', 'smooth, creamy texture and intense flavors', '2021-03-17 18:19:10'),
+(5, 'KORNJUZ', 'Complement your pizza with wide range of beverages available at Domino\'s Pizza Indiamildly sweet, with a subtle nuttiness and a hint of the natural sweetness of corn', '2021-03-17 21:58:58'),
+(6, 'BLENDED SERIES', 'creamy texture, refreshing taste, and versatility in terms of flavors and ingredients', '2021-03-18 07:55:28'),
+(7, 'COLD DRINKS', 'efreshing and enjoyable way to quench your thirst, especially on a hot day', '2021-03-18 08:06:30'),
+(8, 'HOT DRINKS', 'comforting and invigorating beverages enjoyed worldwide, especially during colder weather or when seeking a cozy moment of relaxation', '2021-03-18 08:13:47');
 
 -- --------------------------------------------------------
 
@@ -295,31 +295,31 @@ CREATE TABLE `pizza` (
 --
 
 INSERT INTO `pizza` (`pizzaId`, `pizzaName`, `pizzaPrice`, `pizzaDesc`, `pizzaCategorieId`, `pizzaPubDate`) VALUES
-(1, 'Kaya', 5, 'A hugely popular margherita, with a deliciously tangy single cheese topping\r\n\r\n', 1, '2021-03-17 21:03:26'),
-(2, 'Peanut', 5, 'The ever-popular Margherita - loaded with extra cheese... oodies of it', 1, '2021-03-17 21:20:58'),
-(3, 'Margerine', 5, 'A pizza that goes ballistic on veggies! Check out this mouth watering overload of crunchy, crisp capsicum, succulent mushrooms and fresh tomatoes\r\n\r\n', 1, '2021-03-17 21:22:07'),
-(4, 'Chocolate ', 5, 'Chunky paneer with crisp capsicum and spicy red pepper - quite a mouthful!\r\n\r\n', 1, '2021-03-17 21:23:05'),
-(5, 'Blueberry', 5, 'A pizza loaded with crunchy onions, crisp capsicum, juicy tomatoes and jalapeno with a liberal sprinkling of exotic Mexican herbs.\r\n\r\n', 1, '2021-03-17 21:23:48'),
-(6, 'Strawberry', 319, 'For a vegetarian looking for a BIG treat that goes easy on the spices, this one\'s got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden corn to top it all.\r\n\r\n', 1, '2021-03-17 21:24:38'),
-(16, 'Non Veg Supreme\r\n', 399, 'Bite into supreme delight of Black Olives, Onions, Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers\r\n\r\n', 2, '2021-03-17 21:37:21'),
-(17, 'Chicken Dominator', 319, 'Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers', 2, '2021-03-17 21:38:13'),
-(18, 'PEPPER BARBECUE & ONION\r\n', 249, 'Pepper Barbecue Chicken I Onion', 2, '2021-03-17 21:39:49'),
-(19, 'CHICKEN FIESTA', 199, 'Grilled Chicken Rashers I Peri-Peri Chicken I Onion I Capsicum', 2, '2021-03-17 21:40:58'),
-(20, 'Indi Chicken Tikka', 349, 'The wholesome flavour of tandoori masala with Chicken tikka I onion I red paprika I mint mayo', 2, '2021-03-17 21:41:49'),
-(22, 'VEG LOADED', 149, 'Tomato | Grilled Mushroom |Jalapeno |Golden Corn | Beans in a fresh pan crust', 3, '2021-03-17 21:45:34'),
-(23, 'CHEESY', 99, 'Orange Cheddar Cheese I Mozzarella', 3, '2021-03-17 21:46:21'),
-(24, 'CAPSICUM', 99, 'Capsicum', 3, '2021-03-17 21:47:07'),
-(25, 'ONION', 99, 'onion', 3, '2021-03-17 21:47:51'),
-(26, 'GOLDEN CORN', 139, 'Golden Corn', 3, '2021-03-17 21:48:44'),
-(27, 'PANEER & ONION', 149, 'Creamy Paneer | Onion', 3, '2021-03-17 21:49:36'),
-(28, 'CHEESE N TOMATO', 149, 'A delectable combination of cheese and juicy tomato', 3, '2021-03-17 21:50:20'),
-(29, 'Garlic Breadsticks', 99, 'The endearing tang of garlic in breadstics baked to perfection.', 4, '2021-03-17 22:01:33'),
-(30, 'Stuffed Garlic Bread', 99, 'Freshly Baked Garlic Bread stuffed with mozzarella cheese, sweet corns & tangy and spicy jalapeños', 4, '2021-03-17 22:02:50'),
-(32, 'Non Veg Pasta Italiano White', 99, 'Penne Pasta tossed with extra virgin olive oil, exotic herbs & a generous helping of new flavoured sauce.', 4, '2021-03-17 22:05:08'),
-(33, 'Cheese Jalapeno Dip', 35, 'A soft creamy cheese dip spiced with jalapeno.', 4, '2021-03-17 22:06:06'),
-(34, 'Cheese Dip', 35, 'A dreamy creamy cheese dip to add that extra tang to your snack.', 4, '2021-03-17 22:06:59'),
-(35, 'Lava Cake', 99, 'Filled with delecious molten chocolate inside.', 4, '2021-03-17 22:08:13'),
-(36, 'Butterscotch Mousse Cake', 149, 'A Creamy & Chocolaty indulgence with layers of rich, fluffy Butterscotch Cream and delicious Dark Chocolate Cake, topped with crunchy Dark Chocolate morsels - for a perfect dessert treat!', 4, '2021-03-17 22:08:58'),
+(1, 'Kaya', 5, 'The authentic kaya flavour will make you addicted \r\n', 1, '2021-03-17 21:03:26'),
+(2, 'Peanut', 5, 'made from ground peanuts that have been roasted', 1, '2021-03-17 21:20:58'),
+(3, 'Margerine', 5, 'Classic flavour for you\r\n', 1, '2021-03-17 21:22:07'),
+(4, 'Chocolate ', 5, 'Indulge your senses in the heavenly fusion of warm, golden waffles embraced by a velvety cascade of rich, melted chocolate\r\n\r\n', 1, '2021-03-17 21:23:05'),
+(5, 'Blueberry', 5, 'Each bite of a blueberry waffle is a celebration of nature\'s goodness\r\n', 1, '2021-03-17 21:23:48'),
+(6, 'Strawberry', 5, 'comforting embrace of the waffle perfectly complemented by the zesty brightness of the strawberries\r\n\r\n', 1, '2021-03-17 21:24:38'),
+(16, 'Cocoa Deluxe ', 7, 'deep, bittersweet essence of premium cocoa\r\n', 2, '2021-03-17 21:37:21'),
+(17, 'Chicken Floss', 7, ' balance of sweet, salty, and savory flavors, with a subtle smokiness from the roasting process', 2, '2021-03-17 21:38:13'),
+(18, 'Nyonya Coconut', 7, 'perfect balance of sweet, savory, spicy, and sour flavors', 2, '2021-03-17 21:39:49'),
+(19, 'Japanese BBQ', 7, 'grilling with the rich flavors of marinated meats', 2, '2021-03-17 21:40:58'),
+(20, 'Pandan Kaya', 7, 'enjoyed for its rich, creamy texture and distinctive pandan flavor.', 2, '2021-03-17 21:41:49'),
+(22, 'Original', 4, 'Classic one for you', 3, '2021-03-17 21:45:34'),
+(23, 'Margarine Condensed milk', 5, 'delightful and creamy concoction that combines the smoothness of sweetened condensed milk with the richness of margarine', 3, '2021-03-17 21:46:21'),
+(24, 'Cheezy', 6, 'rich, savory, and often salty taste of cheese', 3, '2021-03-17 21:47:07'),
+(25, 'Cheezy Chili', 6, 'spicy chili flavors and the rich, creamy goodness of cheese', 3, '2021-03-17 21:47:51'),
+(26, 'Cheezy Mayo', 6, ' a delightful combination of creamy mayonnaise and the rich, savory flavor of cheese', 3, '2021-03-17 21:48:44'),
+(27, 'Cheezy Mayo Chilli', 6, ' delightful fusion of creamy mayonnaise, sharp cheese, and spicy chili', 3, '2021-03-17 21:49:36'),
+(28, 'Spicy Cheezy', 6, 'combines the bold kick of spice with the creamy richness of cheese', 3, '2021-03-17 21:50:20'),
+(29, 'Mango', 8, 'smooth texture and intense flavor, is a celebration of the sweet, fragrant mango fruit', 4, '2021-03-17 22:01:33'),
+(30, 'Chocolate', 8, 'ts rich, intense flavor and incredibly smooth texture, is a symphony of chocolatey delights', 4, '2021-03-17 22:02:50'),
+(32, 'Strawberry', 8, 'sweet, juicy strawberries, delivering a burst of fruity freshness with every spoonful', 4, '2021-03-17 22:05:08'),
+(33, 'Blueberry', 8, 'he essence of ripe, juicy blueberries to life in a rich, creamy concoction', 4, '2021-03-17 22:06:06'),
+(34, ' Butterscotch', 8, 'buttery sweetness of butterscotch with the velvety smoothness', 4, '2021-03-17 22:06:59'),
+(35, 'Caramel', 8, 'the rich, buttery sweetness of caramelized sugar', 4, '2021-03-17 22:08:13'),
+(36, 'Coffee', 8, 'captures the robust essence of freshly brewed coffee in a luxuriously creamy and velvety form', 4, '2021-03-17 22:08:58'),
 (37, 'Lipton Ice Tea', 25, ' 250ml', 5, '2021-03-17 22:12:53'),
 (38, 'Mirinda', 35, '500ml', 5, '2021-03-17 22:13:38'),
 (39, 'PEPSI BLACK CAN', 45, 'PEPSI BLACK CAN', 5, '2021-03-17 22:14:24'),
@@ -397,7 +397,7 @@ CREATE TABLE `sitedetail` (
 --
 
 INSERT INTO `sitedetail` (`tempId`, `systemName`, `email`, `contact1`, `contact2`, `address`, `dateTime`) VALUES
-(1, 'Pizza World', 'darshanparmar263@gmail.com', 2515469442, 6304468851, '601 Sherwood Ave.<br> San Bernandino', '2021-03-23 19:56:25');
+(1, 'Daily Fresh', 'dailyfresh9718@gmail.com', 123402506, 192230159, 'PLO 16, Jalan SR/3, Kawasan Perindustrian Simpang Renggam 1, 86200 Simpang Renggam, Johor.', '2021-03-23 19:56:25');
 
 -- --------------------------------------------------------
 
@@ -426,13 +426,15 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `firstName`, `lastName`, `email`, `phone`, `userType`, `password`, `verify_token`, `verify_status`, `expDate`, `joinDate`) VALUES
 (1, 'admin', 'admin', 'admin', 'admin@gmail.com', 1111111111, '1', '$2y$10$AAfxRFOYbl7FdN17rN3fgeiPu/xQrx6MnvRGzqjVHlGqHAM4d9T1i', '0', 0, NULL, '2021-04-11 11:40:58'),
-(2, 'yayayusrii', 'RAJA NUR ALLEA DEWI M', 'RAJA MOHD YUSRI', 'rajanurallea@gmail.com', 123402506, '0', '$2y$10$ixThCLiH1oNada3h5Ab3NuLA0N6il.AQiEsImGWRdZgIpQufO86ci', '0', 0, NULL, '2023-09-03 21:39:40'),
 (3, 'zulaikha', 'Nur', 'Zulaikha', 'nurzul2003@gmail.com', 1164905003, '0', '$2y$10$fdjTTpgLKKnjHym/n7A8ouSuFbyAEqVkJYeJGnSBlHQyPqejw5/1K', '0', 0, NULL, '2023-09-11 16:45:32'),
 (4, 'Zulaikha 23', '2003', '2003', 'zulaikha23@gmail.com', 123456789, '0', '$2y$10$yPJU9ZZQIOV1uzld/7Q0v.Bd8Ge4EkBSCP1LzobDu45vbUrhpnG6.', '0', 0, NULL, '2023-09-11 17:29:55'),
 (5, 'zulaikha 03', '1234', '1234', 'zul2003@gmail.com', 1926573390, '0', '$2y$10$mJRt3dKlwTjdEZWmsHepMeQ3m0x6.ap4vVx13idj8BFvKZPL7t79m', '0', 0, NULL, '2023-09-11 20:58:07'),
 (6, 'zuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$eloMAUJX91LDIG03Jydw9.jvGjhYsQAsXlWqq6efjFTpAwmJWrcNG', '0', 0, NULL, '2023-09-12 16:57:06'),
 (7, '', '', '', 'nrzulykha1501@gmail.com', 0, '0', '', '0bc4f51931be6f79456df29e6ecf8788', 0, NULL, '2023-09-12 22:06:34'),
-(11, 'zuuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$kLTD6gGuRDg/FBpGy7QO6e0/0eKqkW5AMtx.R87xmdK49wAgxBbF.', '', 0, NULL, '2023-09-21 18:39:15');
+(11, 'zuuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$kLTD6gGuRDg/FBpGy7QO6e0/0eKqkW5AMtx.R87xmdK49wAgxBbF.', '', 0, NULL, '2023-09-21 18:39:15'),
+(14, 'alees', 'alees', 'ayuni', 'yayaysriiy@gmail.com', 123402506, '0', '$2y$10$Ert3BcOrY/tCooAi7t.dj.IQmElSQz3no2bOpRVdVkge56hUBoipC', '4cbc6d4e741770f0fd7320680ebd0d5e', 1, NULL, '2023-09-25 09:59:25'),
+(15, 'amira', 'nur', 'amira', 'rajanurallea@gmail.com', 1234567893, '0', '$2y$10$22q./tLf5OPROtZFbD0VlOlEYgwhNCh1b4WqRFhxGctzVuAfIemt2', 'bb59fe4317abfa59ca9c86193822175f', 0, NULL, '2023-09-25 10:31:42'),
+(16, 'yayayusri', 'Raja ', 'Nur Allea', 'rajanurallea@gmail.com', 1212340250, '1', '$2y$10$Oi6g5nqJSfwPwfIVwpaX9.PXfxVLn33fN0BxLvgDA2ciowAh8Yxvm', '', 0, NULL, '2023-09-25 21:46:12');
 
 -- --------------------------------------------------------
 
@@ -592,7 +594,7 @@ ALTER TABLE `sitedetail`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(21) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(21) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `viewcart`
