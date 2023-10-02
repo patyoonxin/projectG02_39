@@ -65,6 +65,35 @@
                                     echo '</div>
                                     </td>
                                 </tr>';}
+								else if($userType == 2) {
+								$userType = "staff";
+								    echo '<tr>
+                                    <td>' .$Id. '</td>
+                                    <td><img src="/DailyFreshOrderingSystem/img/person-' .$Id. '.jpg" alt="image for this user" onError="this.src =\'/DailyFreshOrderingSystem/img/profilePic.jpg\'" width="100px" height="100px"></td>
+                                    <td>' .$username. '</td>
+                                    <td>
+                                        <p>First Name : <b>' .$firstName. '</b></p>
+                                        <p>Last Name : <b>' .$lastName. '</b></p>
+                                    </td>
+                                    <td>' .$email. '</td>
+                                    <td>' .$phone. '</td>
+                                    <td>' .$userType. '</td>
+                                    <td class="text-center">
+                                        <div class="row mx-auto" style="width:112px">
+                                            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#editUser' .$Id. '" type="button">Edit</button>';
+                                            if($Id == 1) {
+                                                echo '<button class="btn btn-sm btn-danger" disabled style="margin-left:9px;">Delete</button>';
+                                            }
+                                            else {
+                                                echo '<form action="partials/_userManage.php" method="POST">
+                                                        <button name="removeUser" class="btn btn-sm btn-danger" style="margin-left:9px;">Delete</button>
+                                                        <input type="hidden" name="Id" value="'.$Id. '">
+                                                    </form>';
+                                            }
+
+                                    echo '</div>
+                                    </td>
+                                </tr>';}
                                 else{
                                     $userType = "Admin";
 
@@ -153,17 +182,17 @@
                         <b><label for="userType">Type:</label></b>
                         <select name="userType" id="userType" class="custom-select browser-default" required>
                         <option value="0">User</option>
-                        <option value="1">Admin</option>
+                        
                         </select>
                     </div>
               </div>
               <div class="form-group">
                   <b><label for="password">Password:</label></b>
-                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="21">
+                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="14">
               </div>
               <div class="form-group">
                   <b><label for="password1">Renter Password:</label></b>
-                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="21">
+                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="14">
 				  <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
 			  </div>
               <button type="submit" name="createUser" class="btn btn-success">Submit</button>

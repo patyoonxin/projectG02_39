@@ -130,16 +130,16 @@
     
 	<?php
         session_start();
-    if(isset($_SESSION['adminloggedin']) && $_SESSION['adminloggedin']==true){
-        $adminloggedin= true;
-        $userId = $_SESSION['adminuserId'];
+    if(isset($_SESSION['staffloggedin']) && $_SESSION['staffloggedin']==true){
+        $staffloggedin= true;
+        $userId = $_SESSION['staffuserId'];
     }
     else{
-        $adminloggedin = false;
+        $staffloggedin = false;
         $userId = 0;
     }
 		
-		if($adminloggedin) {
+		if($staffloggedin) {
     ?>
     
     <div class="container">
@@ -156,6 +156,9 @@
             if($userType == 1) {
                 $userType = "Admin";
             }
+			if($userType == 2){
+				$userType = "Staff";
+			}
             else {
                 $userType = "User";
             }
@@ -164,7 +167,7 @@
         <div class="row">
             <div class="jumbotron p-3 mb-3" style="display: flex;justify-content: center;width: 28%;border-radius: 50px;margin: 0 auto;">
                 <div class="user-info">
-                    <img class="rounded-circle mb-3 bg-dark" src="assetsForSideBar/img/person-<?php echo $userId; ?>.jpg" onError="this.src = 'assetsForSideBar/img/profilePic.jpg'" style="width:100%;height:100%;padding:1px;">
+                    <img class="rounded-circle mb-3 bg-dark" src="assetsForSideBar/img/person-<?php echo $userId; ?>.jpg" onError="this.src = 'assetsForSideBar/img/profilePic.jpg'" style="width:215px;height:215px;padding:1px;">
                     <form action="partials/_manageProfile.php" method="POST">
                         <small>Remove Image: </small><button type="submit" class="btn btn-primary" name="removeProfilePic" style="font-size: 12px;padding: 3px 8px;border-radius: 9px;">remove</button>
                     </form>
@@ -224,7 +227,7 @@
                             </div>
                             <div class="form-group  col-md-6">
                                 <b><label for="password">Password:</label></b>    
-                                <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="21" data-toggle="password" pattern="[^\s]+">
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="14" data-toggle="password" pattern="[^\s]+">
 								<span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
                             </div>
                         </div>
@@ -249,7 +252,7 @@
             </div>';
         }
     ?>
-    <?php require 'partials/_footer.php' ?>
+    <!--<?php require 'partials/_footer.php' ?>-->
     
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

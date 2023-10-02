@@ -1,1 +1,1 @@
-<h1 style="margin-top:98px">Welcome back <b><?php echo $_SESSION['adminusername']; ?></b></h1>
+<h1 style="margin-top:98px">Welcome back <b><?php echo $_SESSION['staffusername']; ?></b></h1>

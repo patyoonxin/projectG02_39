@@ -224,8 +224,8 @@
                             </div>
                             <div class="form-group  col-md-6">
                                 <b><label for="password">Password:</label></b>    
-                                <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="21" data-toggle="password" pattern="[^\s]+">
-								<span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="14" data-toggle="password" pattern="[^\s]+">
+								<span style="color:#777;font-size:12px;">*Password cannot include spaces and should be 4-14 length</span>
                             </div>
                         </div>
                         <button type="submit" name="updateProfileDetail" class="btn btn-primary">Update</button>
@@ -249,7 +249,7 @@
             </div>';
         }
     ?>
-    <?php require 'partials/_footer.php' ?>
+    <!--<?php require 'DailyFreshOrderingSystem/partials/_footer.php' ?>-->
     
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
