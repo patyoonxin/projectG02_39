@@ -50,8 +50,9 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon">+60</span>
                   </div>
-                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number" required pattern="[0-9]{9-10}" maxlength="10">
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number" required pattern="/^[0-9]+$/" minlength="9" maxlength="10">
                 </div>
+				<span style="color:#777;font-size:12px;">*Exclude dash(-)</span>
               </div>
               <div class="text-left my-2">
                   <b><label for="password">Password:</label></b>
