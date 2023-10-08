@@ -65,12 +65,43 @@
                                     echo '</div>
                                     </td>
                                 </tr>';}
-                                else{
+                                else if($userType == 1){
                                     $userType = "Admin";
 
                                 echo '<tr>
                                     <td>' .$Id. '</td>
                                     <td><img src="/DailyFreshOrderingSystem/admin/assetsForSideBar/img/person-' .$Id. '.jpg" alt="image for this user" onError="this.src =\'/DailyFreshOrderingSystem/img/profilePic.jpg\'" width="100px" height="100px"></td>
+                                    <td>' .$username. '</td>
+                                    <td>
+                                        <p>First Name : <b>' .$firstName. '</b></p>
+                                        <p>Last Name : <b>' .$lastName. '</b></p>
+                                    </td>
+                                    <td>' .$email. '</td>
+                                    <td>' .$phone. '</td>
+                                    <td>' .$userType. '</td>
+                                    <td class="text-center">
+                                        <div class="row mx-auto" style="width:112px">
+                                            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#editUser' .$Id. '" type="button">Edit</button>';
+                                            if($Id == 1) {
+                                                echo '<button class="btn btn-sm btn-danger" disabled style="margin-left:9px;">Delete</button>';
+                                            }
+                                            else {
+                                                echo '<form action="partials/_userManage.php" method="POST">
+                                                        <button name="removeUser" class="btn btn-sm btn-danger" style="margin-left:9px;">Delete</button>
+                                                        <input type="hidden" name="Id" value="'.$Id. '">
+                                                    </form>';
+                                            }
+
+                                    echo '</div>
+                                    </td>
+                                </tr>';
+								}
+								else{
+                                    $userType = "Staff";
+
+                                echo '<tr>
+                                    <td>' .$Id. '</td>
+                                    <td><img src="/DailyFreshOrderingSystem/staff/assetsForSideBar/img/person-' .$Id. '.jpg" alt="image for this user" onError="this.src =\'/DailyFreshOrderingSystem/img/profilePic.jpg\'" width="100px" height="100px"></td>
                                     <td>' .$username. '</td>
                                     <td>
                                         <p>First Name : <b>' .$firstName. '</b></p>
@@ -154,6 +185,7 @@
                         <select name="userType" id="userType" class="custom-select browser-default" required>
                         <option value="0">User</option>
                         <option value="1">Admin</option>
+						<option value="2">Staff</option>
                         </select>
                     </div>
               </div>
@@ -257,13 +289,23 @@
                         ?>
                             <option value="0">User</option>
                             <option value="1" selected>Admin</option>
+							<option value="2">Staff</option>
                         <?php
                             } 
-                            else {
+                            else if($userType == 0) {
                         ?>
                             <option value="0" selected>User</option>
                             <option value="1">Admin</option>
+							<option value="2">Staff</option>
                         <?php
+                            } 
+							else {
+                        ?>
+							<option value="0">User</option>
+                            <option value="1">Admin</option>
+							<option value="2"  selected>Staff</option>
+							
+						<?php
                             } 
                         ?>
                         </select>
