@@ -285,13 +285,8 @@
                             if($userType == 1) {
                         ?>
                             <option value="0">User</option>
-                            <option value="1" selected>Admin</option>
-                        <?php
-                            } 
-                            else {
-                        ?>
-                            <option value="0" selected>User</option>
-                            <option value="1">Admin</option>
+                           
+                       
                         <?php
                             } 
                         ?>
