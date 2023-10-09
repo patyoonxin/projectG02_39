@@ -69,7 +69,7 @@
 								$userType = "staff";
 								    echo '<tr>
                                     <td>' .$Id. '</td>
-                                    <td><img src="/DailyFreshOrderingSystem/img/person-' .$Id. '.jpg" alt="image for this user" onError="this.src =\'/DailyFreshOrderingSystem/img/profilePic.jpg\'" width="100px" height="100px"></td>
+                                    <td><img src="/DailyFreshOrderingSystem/staff/assetsForSideBar/img/person-' .$Id. '.jpg" alt="image for this user" onError="this.src =\'/DailyFreshOrderingSystem/img/profilePic.jpg\'" width="100px" height="100px"></td>
                                     <td>' .$username. '</td>
                                     <td>
                                         <p>First Name : <b>' .$firstName. '</b></p>

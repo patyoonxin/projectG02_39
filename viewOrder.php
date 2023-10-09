@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <title>Your Order</title>
-    <link rel = "icon" href ="img/logo.jpg" type = "image/x-icon">
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
 <style>
     .footer {
       position: fixed;

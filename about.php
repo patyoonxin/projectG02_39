@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <title>About Us</title>
-    <link rel = "icon" href ="img/logo.jpg" type = "image/x-icon">
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -205,12 +205,12 @@
 
          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
             <div class="member">
-              <img src="assets/img/team/leader.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <img src="assets/img/team/leader2.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Leader</h4>
 				  <hr>
-				   <h4>Yoon Xin</h4>
+				   <h4>Pat Yoon Xin</h4>
                 </div>
                
 

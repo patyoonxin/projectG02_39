@@ -7,7 +7,7 @@
     <meta name="description" content="Bootstrap navbar examples for any type of project, Bootstrap 4" />  
 
     <title>Profile </title>
-    <link rel = "icon" href ="img/logo.jpg" type = "image/x-icon">
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">

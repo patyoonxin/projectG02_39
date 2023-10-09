@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     
     <title>Contact Us</title>
-    <link rel = "icon" href ="img/logo.jpg" type = "image/x-icon">
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
     <style>
        .icon-badge-group .icon-badge-container {
           display: inline-block;
@@ -102,21 +102,21 @@
       }
 
       .contact2 .btn-danger-gradiant {
-        background: #ff4d7e;
-        background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
-        background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
-        background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-        background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-        background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+        background: #03D139;
+        background: -webkit-linear-gradient(legacy-direction(to right), #03D139 0%, #03D139 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#03D139), to(#03D139));
+        background: -webkit-linear-gradient(left, #03D139 0%, #03D139 100%);
+        background: -o-linear-gradient(left, #03D139 0%, #03D139 100%);
+        background: linear-gradient(to right, #03D139 0%, #03D139 100%);
       }
 
       .contact2 .btn-danger-gradiant:hover {
-        background: #ff6a5b;
-        background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
-        background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
-        background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-        background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-        background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+        background: #06AB31;
+        background: -webkit-linear-gradient(legacy-direction(to right), #06AB31 0%, #06AB31 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#06AB31), to(#06AB31));
+        background: -webkit-linear-gradient(left, #06AB31 0%, #06AB31 100%);
+        background: -o-linear-gradient(left, #06AB31 0%, #06AB31 100%);
+        background: linear-gradient(to right, #06AB31 0%, #06AB31 100%);
       }
     </style>
   </head>
@@ -197,7 +197,7 @@
                             </div>
                           <?php }else { ?>
                             <div class="col-lg-12">
-                              <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 py-2 px-3" disabled><span> SUBMIT NOW <i class="ti-arrow-right"></i></span></button>
+                              <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 py-2 px-3" disabled>><span> SUBMIT NOW <i class="ti-arrow-right"></i></span></button>
                               <small class="form-text text-muted">First login to Contct with Us.</small>
                             </div>
                           <?php } ?>
