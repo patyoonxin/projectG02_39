@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2023 at 03:37 PM
+-- Generation Time: Oct 10, 2023 at 04:02 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -167,30 +167,30 @@ CREATE TABLE `pizza` (
 
 INSERT INTO `pizza` (`pizzaId`, `pizzaName`, `pizzaPrice`, `pizzaDesc`, `pizzaCategorieId`, `pizzaPubDate`) VALUES
 (1, 'Kaya', 5, 'The authentic kaya flavour will make you addicted \r\n', 1, '2021-03-17 21:03:26'),
-(2, 'Peanut', 5, 'made from ground peanuts that have been roasted', 1, '2021-03-17 21:20:58'),
+(2, 'Peanut', 5, 'Made from ground peanuts that have been roasted', 1, '2021-03-17 21:20:58'),
 (3, 'Margerine', 5, 'Classic flavour for you\r\n', 1, '2021-03-17 21:22:07'),
 (4, 'Chocolate ', 5, 'Indulge your senses in the heavenly fusion of warm, golden waffles embraced by a velvety cascade of rich, melted chocolate\r\n\r\n', 1, '2021-03-17 21:23:05'),
 (5, 'Blueberry', 5, 'Each bite of a blueberry waffle is a celebration of nature\'s goodness\r\n', 1, '2021-03-17 21:23:48'),
-(6, 'Strawberry', 5, 'comforting embrace of the waffle perfectly complemented by the zesty brightness of the strawberries\r\n\r\n', 1, '2021-03-17 21:24:38'),
-(7, 'Chicken Floss', 7, ' balance of sweet, salty, and savory flavors, with a subtle smokiness from the roasting process', 2, '2021-03-17 21:38:13'),
-(8, 'Cocoa Deluxe ', 7, 'deep, bittersweet essence of premium cocoa\r\n', 2, '2021-03-17 21:37:21'),
-(9, 'Japanese BBQ', 7, 'grilling with the rich flavors of marinated meats', 2, '2021-03-17 21:40:58'),
-(10, 'Pandan Kaya', 7, 'enjoyed for its rich, creamy texture and distinctive pandan flavor.', 2, '2021-03-17 21:41:49'),
-(11, 'Nyonya Coconut', 7, 'perfect balance of sweet, savory, spicy, and sour flavors', 2, '2021-03-17 21:39:49'),
+(6, 'Strawberry', 5, 'Comforting embrace of the waffle perfectly complemented by the zesty brightness of the strawberries\n\n', 1, '2021-03-17 21:24:38'),
+(7, 'Chicken Floss', 7, 'Balance of sweet, salty, and savory flavors, with a subtle smokiness from the roasting process', 2, '2021-03-17 21:38:13'),
+(8, 'Cocoa Deluxe ', 7, 'Deep, bittersweet essence of premium cocoa\n', 2, '2021-03-17 21:37:21'),
+(9, 'Japanese BBQ', 7, 'Grilling with the rich flavors of marinated meats', 2, '2021-03-17 21:40:58'),
+(10, 'Pandan Kaya', 7, 'Enjoyed for its rich, creamy texture and distinctive pandan flavor.', 2, '2021-03-17 21:41:49'),
+(11, 'Nyonya Coconut', 7, 'Perfect balance of sweet, savory, spicy, and sour flavors', 2, '2021-03-17 21:39:49'),
 (12, 'Original', 4, 'Classic one for you', 3, '2021-03-17 21:45:34'),
-(13, 'Margarine Condensed milk', 5, 'delightful and creamy concoction that combines the smoothness of sweetened condensed milk with the richness of margarine', 3, '2021-03-17 21:46:21'),
-(14, 'Cheezy Chili', 6, 'spicy chili flavors and the rich, creamy goodness of cheese', 3, '2021-03-17 21:47:51'),
-(15, 'Cheezy', 6, 'rich, savory, and often salty taste of cheese', 3, '2021-03-17 21:47:07'),
-(16, 'Cheezy Mayo Chilli', 6, ' delightful fusion of creamy mayonnaise, sharp cheese, and spicy chili', 3, '2021-03-17 21:49:36'),
-(17, 'Cheezy Mayo', 6, ' a delightful combination of creamy mayonnaise and the rich, savory flavor of cheese', 3, '2021-03-17 21:48:44'),
-(18, 'Spicy Cheezy', 6, 'combines the bold kick of spice with the creamy richness of cheese', 3, '2021-03-17 21:50:20'),
-(19, 'Chocolate', 8, 'ts rich, intense flavor and incredibly smooth texture, is a symphony of chocolatey delights', 4, '2021-03-17 22:02:50'),
-(20, 'Mango', 8, 'smooth texture and intense flavor, is a celebration of the sweet, fragrant mango fruit', 4, '2021-03-17 22:01:33'),
-(21, ' Butterscotch', 8, 'buttery sweetness of butterscotch with the velvety smoothness', 4, '2021-03-17 22:06:59'),
-(22, 'Blueberry', 8, 'he essence of ripe, juicy blueberries to life in a rich, creamy concoction', 4, '2021-03-17 22:06:06'),
-(23, 'Strawberry', 8, 'sweet, juicy strawberries, delivering a burst of fruity freshness with every spoonful', 4, '2021-03-17 22:05:08'),
-(24, 'Coffee', 8, 'captures the robust essence of freshly brewed coffee in a luxuriously creamy and velvety form', 4, '2021-03-17 22:08:58'),
-(25, 'Caramel', 8, 'the rich, buttery sweetness of caramelized sugar', 4, '2021-03-17 22:08:13'),
+(13, 'Margarine Condensed milk', 5, 'Delightful and creamy concoction that combines the smoothness of sweetened condensed milk with the richness of margarine', 3, '2021-03-17 21:46:21'),
+(14, 'Cheezy Chili', 6, 'Spicy chili flavors and the rich, creamy goodness of cheese', 3, '2021-03-17 21:47:51'),
+(15, 'Cheezy', 6, 'Rich, savory, and often salty taste of cheese', 3, '2021-03-17 21:47:07'),
+(16, 'Cheezy Mayo Chilli', 6, 'Delightful fusion of creamy mayonnaise, sharp cheese, and spicy chili', 3, '2021-03-17 21:49:36'),
+(17, 'Cheezy Mayo', 6, 'A delightful combination of creamy mayonnaise and the rich, savory flavor of cheese', 3, '2021-03-17 21:48:44'),
+(18, 'Spicy Cheezy', 6, 'Combines the bold kick of spice with the creamy richness of cheese', 3, '2021-03-17 21:50:20'),
+(19, 'Chocolate', 8, 'Rich, intense flavor and incredibly smooth texture, is a symphony of chocolatey delights', 4, '2021-03-17 22:02:50'),
+(20, 'Mango', 8, 'Smooth texture and intense flavor, is a celebration of the sweet, fragrant mango fruit', 4, '2021-03-17 22:01:33'),
+(21, ' Butterscotch', 8, 'Buttery sweetness of butterscotch with the velvety smoothness', 4, '2021-03-17 22:06:59'),
+(22, 'Blueberry', 8, 'He essence of ripe, juicy blueberries to life in a rich, creamy concoction', 4, '2021-03-17 22:06:06'),
+(23, 'Strawberry', 8, 'Sweet, juicy strawberries, delivering a burst of fruity freshness with every spoonful', 4, '2021-03-17 22:05:08'),
+(24, 'Coffee', 8, 'Captures the robust essence of freshly brewed coffee in a luxuriously creamy and velvety form', 4, '2021-03-17 22:08:58'),
+(25, 'Caramel', 8, 'The rich, buttery sweetness of caramelized sugar', 4, '2021-03-17 22:08:13'),
 (26, 'Black Pinky', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 5, '2023-10-09 10:59:47'),
 (27, 'Original', 8, 'A sweet treat made from our delicious, signature syrup, and milk is blended with ice.', 5, '2023-10-09 11:02:37'),
 (28, 'Black Kay (Kurma)', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 5, '2023-10-10 19:47:28'),

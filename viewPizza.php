@@ -62,7 +62,7 @@
                 <div class="mx-4">
                     <a href="viewPizzaList.php?catid=' . $pizzaCategorieId . '" class="active text-dark">
                     <i class="fas fa-qrcode"></i>
-                        <span>All Pizza</span>
+                        <span>All Flavours</span>
                     </a>
                 </div>
                 <div class="mx-4">
