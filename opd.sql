@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2023 at 05:50 PM
+-- Generation Time: Oct 10, 2023 at 03:37 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -39,14 +39,14 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categorieId`, `categorieName`, `categorieDesc`, `categorieCreateDate`) VALUES
-(1, 'CLASSIC SWEET', 'The Classic one for you', '2021-03-17 18:16:28'),
-(2, 'WAFITO', 'a delightful creation that marries the beloved aspects of waffles and burritos, is a portable and indulgent culinary treat', '2021-03-17 18:17:14'),
-(3, 'SWEET CORN', 'the peak of ripeness, sweet corn offers a burst of flavor that instantly evokes the essence of summertime', '2021-03-17 18:17:43'),
-(4, 'GELATO TEMPO', 'smooth, creamy texture and intense flavors', '2021-03-17 18:19:10'),
-(5, 'KORNJUZ', 'Complement your pizza with wide range of beverages available at Domino\'s Pizza Indiamildly sweet, with a subtle nuttiness and a hint of the natural sweetness of corn', '2021-03-17 21:58:58'),
-(6, 'BLENDED SERIES', 'creamy texture, refreshing taste, and versatility in terms of flavors and ingredients', '2021-03-18 07:55:28'),
-(7, 'COLD DRINKS', 'efreshing and enjoyable way to quench your thirst, especially on a hot day', '2021-03-18 08:06:30'),
-(8, 'HOT DRINKS', 'comforting and invigorating beverages enjoyed worldwide, especially during colder weather or when seeking a cozy moment of relaxation', '2021-03-18 08:13:47');
+(1, 'CLASSIC SWEET', 'The Classic waffle made from leavened batter or dough that is cooked between two plates that are patterned to give a characteristic size, shape, and surface impression.', '2021-03-17 18:16:28'),
+(2, 'WAFITO', 'Wafito special made from leavened batter or dough that is cooked between two plates that are patterned to give a characteristic size, shape, and surface impression.', '2021-03-17 18:17:14'),
+(3, 'SWEET CORN', 'The sweet corn combined with condensed milk and salty butter.', '2021-03-17 18:17:43'),
+(4, 'GELATO TEMPO', 'The best gelato and sorbet in Daily Fresh with authentic and original recipes.', '2021-03-17 18:19:10'),
+(5, 'KORNJUZ', 'The beverages that combined with a signature of tea, coffee or milk', '2021-03-17 21:58:58'),
+(6, 'BLENDED SERIES', 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', '2021-03-18 07:55:28'),
+(7, 'COLD DRINKS', 'A cold drink treat made from our delicious signature syrup and milk.', '2021-03-18 08:06:30'),
+(8, 'HOT DRINKS', 'A hot drink treat made from our delicious signature syrup and milk.', '2021-03-18 08:13:47');
 
 -- --------------------------------------------------------
 
@@ -136,6 +136,16 @@ CREATE TABLE `password_reset_temp` (
   `expDate` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `password_reset_temp`
+--
+
+INSERT INTO `password_reset_temp` (`email`, `key`, `expDate`) VALUES
+('nrzulykha1501@gmail.com', '9294c5b6746fe0674668bbc15a9f1d37c691cdabd1', '2023-10-06 20:39:14'),
+('nrzulykha1501@gmail.com', '4375506ef543dca4b41bd49bd216b4c25ce6f777ae', '2023-10-09 15:32:27'),
+('nrzulykha1501@gmail.com', '91aaee39651a6a03a7df3ad472d7fcaa49d71bf78c', '2023-10-09 15:33:40'),
+('nrzulykha1501@gmail.com', 'fcc7c71d0a399bc0d3c37ecc5776126cb5a9a2ddd3', '2023-10-09 15:36:59');
+
 -- --------------------------------------------------------
 
 --
@@ -181,21 +191,21 @@ INSERT INTO `pizza` (`pizzaId`, `pizzaName`, `pizzaPrice`, `pizzaDesc`, `pizzaCa
 (23, 'Strawberry', 8, 'sweet, juicy strawberries, delivering a burst of fruity freshness with every spoonful', 4, '2021-03-17 22:05:08'),
 (24, 'Coffee', 8, 'captures the robust essence of freshly brewed coffee in a luxuriously creamy and velvety form', 4, '2021-03-17 22:08:58'),
 (25, 'Caramel', 8, 'the rich, buttery sweetness of caramelized sugar', 4, '2021-03-17 22:08:13'),
-(37, 'Lipton Ice Tea', 25, ' 250ml', 5, '2021-03-17 22:12:53'),
-(38, 'Mirinda', 35, '500ml', 5, '2021-03-17 22:13:38'),
-(39, 'PEPSI BLACK CAN', 45, 'PEPSI BLACK CAN', 5, '2021-03-17 22:14:24'),
-(40, 'Pepsi\r\n', 52, '500ml', 5, '2021-03-17 22:16:29'),
-(41, '7Up', 52, '500ml', 5, '2021-03-17 22:17:08'),
-(42, 'Cheese Burst', 249, 'Crust with oodles of yummy liquid cheese filled inside.', 6, '2021-03-18 07:57:27'),
-(43, 'Classic Hand Tossed', 249, 'Dominos traditional hand stretched crust, crisp on outside, soft & light inside.', 6, '2021-03-18 07:59:52'),
-(44, 'Wheat Thin Crust', 299, 'Presenting the light healthier and delicious light wheat thin crust from Dominos.', 6, '2021-03-18 08:00:39'),
-(45, 'Fresh Pan Pizza', 299, 'Tastiest Pan Pizza.Ever.\r\nDomino’s freshly made pan-baked pizza; deliciously soft ,buttery,extra cheesy and delightfully crunchy.', 6, '2021-03-18 08:01:29'),
-(46, 'New Hand Tossed', 299, 'Classic Domino\'s crust. Fresh, hand stretched.', 6, '2021-03-18 08:03:17'),
-(47, 'BURGER PIZZA- CLASSIC VEG', 129, 'Bite into delight! Witness the epic combination of pizza and burger with our classic Burger Pizza, that looks good and tastes great!', 7, '2021-03-18 08:09:17'),
-(48, 'BURGER PIZZA- PREMIUM VEG', 139, 'The good just got better! Treat yourself to the premium taste of the Burger Pizza, that looks good and tastes great with paneer and red paprika.', 7, '2021-03-18 08:09:59'),
-(49, 'BURGER PIZZA- CLASSIC NON VEG', 149, 'For all the meat cravers, try the classic non-veg Burger Pizza loaded with the goodness of burger and the greatness of pizza.', 7, '2021-03-18 08:10:37'),
-(52, 'Non Veg Toppings', 55, 'Barbeque Chicken, Hot \'n\' Spicy Chicken,Chunky Chicken and Chicken Salami.', 8, '2021-03-18 08:16:29'),
-(53, 'Packaged Drinking Water', 20, 'Drinking Water	', 5, '2021-03-18 08:20:40');
+(26, 'Black Pinky', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 5, '2023-10-09 10:59:47'),
+(27, 'Original', 8, 'A sweet treat made from our delicious, signature syrup, and milk is blended with ice.', 5, '2023-10-09 11:02:37'),
+(28, 'Black Kay (Kurma)', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 5, '2023-10-10 19:47:28'),
+(29, 'Chocolate Frappe', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 6, '2023-10-10 22:12:53'),
+(30, 'White Coffee Frappe', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 6, '2023-10-10 22:13:38'),
+(31, 'Milk Tea Frappe', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 6, '2023-10-10 22:14:24'),
+(32, 'Blacky Panther Frappe', 8, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 6, '2023-10-10 22:16:29'),
+(33, 'Iced Lemon Tea ', 5, 'A sweet treat made from our delicious signature syrup, and milk is blended with ice.', 7, '2023-10-10 08:09:17'),
+(34, 'Iced Peach Tea', 5, 'A sweet treat made from our delicious signature syrup, and milk with ice.', 7, '2023-10-10 08:09:59'),
+(35, 'Iced Chocolate', 5, 'A sweet treat made from our delicious signature syrup, and milk with ice.', 7, '2021-03-18 08:10:37'),
+(36, 'Iced White Coffee', 5, 'A sweet treat made from our delicious signature syrup, and milk with ice', 7, '2023-10-10 21:00:10'),
+(37, 'Iced Milk Tea', 5, 'A sweet treat made from our delicious signature syrup, and milk with ice', 7, '2023-10-10 21:02:27'),
+(38, 'Hot Chocolate', 4, 'A sweet treat made from our delicious signature syrup and milk', 8, '2023-10-10 08:16:29'),
+(39, 'Hot White Coffee', 4, 'A sweet treat made from our delicious signature syrup and milk', 8, '2023-10-10 10:59:47'),
+(40, 'Hot Milk Tea', 4, 'A sweet treat made from our delicious signature syrup and milk', 8, '2023-10-10 21:10:05');
 
 -- --------------------------------------------------------
 
@@ -290,13 +300,15 @@ INSERT INTO `users` (`id`, `username`, `firstName`, `lastName`, `email`, `phone`
 (3, 'zulaikha', 'Nur', 'Zulaikha', 'nurzul2003@gmail.com', 1164905003, '0', '$2y$10$fdjTTpgLKKnjHym/n7A8ouSuFbyAEqVkJYeJGnSBlHQyPqejw5/1K', '0', 0, NULL, '2023-09-11 16:45:32'),
 (4, 'Zulaikha 23', '2003', '2003', 'zulaikha23@gmail.com', 123456789, '0', '$2y$10$yPJU9ZZQIOV1uzld/7Q0v.Bd8Ge4EkBSCP1LzobDu45vbUrhpnG6.', '0', 0, NULL, '2023-09-11 17:29:55'),
 (5, 'zulaikha 03', '1234', '1234', 'zul2003@gmail.com', 1926573390, '0', '$2y$10$mJRt3dKlwTjdEZWmsHepMeQ3m0x6.ap4vVx13idj8BFvKZPL7t79m', '0', 0, NULL, '2023-09-11 20:58:07'),
-(6, 'zuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$RFWwLW1ibO7bt.tpOynj4O0Cgl77RvY4IxGEfXgd4SURGrjlatw1a', '0', 0, NULL, '2023-09-12 16:57:06'),
-(7, '', '', '', 'nrzulykha1501@gmail.com', 0, '0', '$2y$10$RFWwLW1ibO7bt.tpOynj4O0Cgl77RvY4IxGEfXgd4SURGrjlatw1a', '0bc4f51931be6f79456df29e6ecf8788', 0, NULL, '2023-09-12 22:06:34'),
-(11, 'zuuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$RFWwLW1ibO7bt.tpOynj4O0Cgl77RvY4IxGEfXgd4SURGrjlatw1a', '', 0, NULL, '2023-09-21 18:39:15'),
+(6, 'zuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '0', 0, NULL, '2023-09-12 16:57:06'),
+(7, '', '', '', 'nrzulykha1501@gmail.com', 0, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '0bc4f51931be6f79456df29e6ecf8788', 0, NULL, '2023-09-12 22:06:34'),
+(11, 'zuuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '', 0, NULL, '2023-09-21 18:39:15'),
 (14, 'alees', 'alees', 'ayuni', 'yayaysriiy@gmail.com', 123402506, '0', '$2y$10$Ert3BcOrY/tCooAi7t.dj.IQmElSQz3no2bOpRVdVkge56hUBoipC', '4cbc6d4e741770f0fd7320680ebd0d5e', 1, NULL, '2023-09-25 09:59:25'),
 (15, 'amira', 'nur', 'amira', 'rajanurallea@gmail.com', 1234567893, '0', '$2y$10$22q./tLf5OPROtZFbD0VlOlEYgwhNCh1b4WqRFhxGctzVuAfIemt2', 'bb59fe4317abfa59ca9c86193822175f', 0, NULL, '2023-09-25 10:31:42'),
 (16, 'yayayusri', 'Raja ', 'Nur Allea', 'rajanurallea@gmail.com', 1212340250, '1', '$2y$10$Oi6g5nqJSfwPwfIVwpaX9.PXfxVLn33fN0BxLvgDA2ciowAh8Yxvm', '', 0, NULL, '2023-09-25 21:46:12'),
-(17, 'zulaikhaz', 'NURZULAIKHA', 'ISA', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$RFWwLW1ibO7bt.tpOynj4O0Cgl77RvY4IxGEfXgd4SURGrjlatw1a', '33e711c8b8f773785e9b9227518eede6', 1, NULL, '2023-10-01 23:44:45');
+(17, 'zulaikhaz', 'NURZULAIKHA', 'ISA', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '33e711c8b8f773785e9b9227518eede6', 1, NULL, '2023-10-01 23:44:45'),
+(18, 'Try', 'Cuba', 'Test', 'zulaikhazaruddin20@gmail.com', 12, '0', '$2y$10$47/V.P6GUUwOZlfuRNLQkeWvQbJwc63u7UxF26Tw091BwdbubR7fy', '9762309f9c1218570f1ff50054de14f2', 0, NULL, '2023-10-05 23:18:09'),
+(19, 'zzulaikhaaz', 'NURZULAIKHA', 'ISA', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$EkiTYdA4hgaBXY9pTh5qteDnUmLAyoroAsT0h9nbCrDlx3gOK9BV.', '35355b606178092f2b100e2f17b03e43', 1, NULL, '2023-10-08 16:27:00');
 
 -- --------------------------------------------------------
 
@@ -317,7 +329,9 @@ CREATE TABLE `viewcart` (
 --
 
 INSERT INTO `viewcart` (`cartItemId`, `pizzaId`, `itemQuantity`, `userId`, `addedDate`) VALUES
-(1, 1, 1, 3, '2023-09-12 13:48:18');
+(1, 1, 1, 3, '2023-09-12 13:48:18'),
+(2, 1, 1, 17, '2023-10-06 01:39:27'),
+(7, 13, 1, 19, '2023-10-08 16:30:31');
 
 --
 -- Indexes for dumped tables
@@ -402,7 +416,7 @@ ALTER TABLE `viewcart`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `categorieId` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `categorieId` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `contact`
@@ -438,7 +452,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `pizza`
 --
 ALTER TABLE `pizza`
-  MODIFY `pizzaId` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `pizzaId` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `signup`
@@ -456,13 +470,13 @@ ALTER TABLE `sitedetail`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(21) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(21) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `viewcart`
 --
 ALTER TABLE `viewcart`
-  MODIFY `cartItemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cartItemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
