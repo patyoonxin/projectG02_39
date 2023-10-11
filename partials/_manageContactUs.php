@@ -21,12 +21,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = mysqli_query($conn, $sql);
         $contactId = $conn->insert_id;
         echo '<script>alert("Thanks for Contact us. Your contact id is ' .$contactId. '. We will contact you very soon.");
-                    window.location.href="http://localhost/OnlinePizzaDelivery/index.php";  
+                    window.location.href="http://localhost/DailyFreshOrderingSystem/index.php";  
                     </script>';
                     exit();
     }
     else{
-        echo "<script>alert('Password incorrect!!');
+        echo "<script>alert('Password incorrect!');
                 window.history.back(1);
                 </script>";
     }
