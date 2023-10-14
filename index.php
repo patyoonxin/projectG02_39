@@ -15,7 +15,10 @@
   <?php include 'partials/_dbconnect.php';?>
   <?php require 'partials/_nav.php' ?>
   
+   <div class="carousel-background"><img src="assets/img/slide/dailyfreshlogo.jpg" alt="" style="height: 900px;width: 1516px;" ></div>
+  
   <!-- Category container starts here -->
+  <img src="img/dailyfreshlogo.jpg" >
   <div class="container my-3 mb-5">
     <div class="col-lg-2 text-center bg-light my-3" style="margin:auto;border-top: 2px groove black;border-bottom: 2px groove black;">     
       <h2 class="text-center">Menu </h2>
