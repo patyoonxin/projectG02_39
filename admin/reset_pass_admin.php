@@ -35,12 +35,13 @@ $error = "";
 
                                     <div class="form-group">
                                         <label><strong>Enter New Password:</strong></label>
-                                        <input type="password"  name="pass1" class="form-control"/>
+                                        <input type="password"  name="pass1" class="form-control" minlength="4" maxlength="14"/>
                                     </div>
 
                                     <div class="form-group">
                                         <label><strong>Re-Enter New Password:</strong></label>
-                                        <input type="password"  name="pass2" class="form-control"/>
+                                        <input type="password"  name="pass2" class="form-control" minlength="4" maxlength="14"/>
+										<span style="color:#777;font-size:12px;">*Password cannot include spaces and should be 4-14 length long</span>
                                     </div>
                                     <input type="hidden" name="email" value="<?php echo $email; ?>"/>
                                     <div class="form-group">

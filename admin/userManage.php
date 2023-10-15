@@ -177,7 +177,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon">+60</span>
                             </div>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone No" required pattern="[0-9]{9-10}" maxlength="10">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone No" required pattern="[0-9]+" minlength="9" maxlength="10">
                         </div>
                     </div>
                     <div class="form-group col-md-6 my-0">
@@ -191,11 +191,11 @@
               </div>
               <div class="form-group">
                   <b><label for="password">Password:</label></b>
-                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="21">
+                  <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="14">
               </div>
               <div class="form-group">
                   <b><label for="password1">Renter Password:</label></b>
-                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="21">
+                  <input class="form-control" id="cpassword" name="cpassword" placeholder="Renter Password" type="password" pattern="[^\s]+" required data-toggle="password" minlength="4" maxlength="14">
 				  <span style="color:#777;font-size:12px;">*Password cannot include spaces </span>
 			  </div>
               <button type="submit" name="createUser" class="btn btn-success">Submit</button>
@@ -278,7 +278,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon">+60</span>
                             </div>
-                            <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $phone; ?>" required pattern="[0-9]{9-10}" maxlength="10">
+                            <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $phone; ?>" required pattern="[0-9]+" minlength="9" maxlength="10">
                         </div>
                     </div>
                     <div class="form-group col-md-6 my-0">

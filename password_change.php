@@ -41,12 +41,13 @@ include('header.php'); // Include your header file
 
                             <div class="form-group mb-3">
                                 <label>New Password</label>
-                                <input type="password" name="new_password" class="form-control" placeholder="Enter New Password">
+                                <input type="password" name="new_password" class="form-control" placeholder="Enter New Password" minlength="4" maxlength="14">
                             </div>
 
                             <div class="form-group mb-3">
                                 <label>Confirm Password</label>
-                                <input type="password" name="confirm_password" class="form-control" placeholder="Enter Confirm Password">
+                                <input type="password" name="confirm_password" class="form-control" placeholder="Enter Confirm Password" minlength="4" maxlength="14">
+								<span style="color:#777;font-size:12px;">*Password cannot include spaces and should be 4-14 length long</span>
                             </div>
 
                             <div class="form-group mb-3">
