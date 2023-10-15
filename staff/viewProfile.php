@@ -232,6 +232,7 @@
                             </div>
                         </div>
                         <button type="submit" name="updateProfileDetail" class="btn btn-primary">Update</button>
+						<a href="forgot_pass_staff.php">Change Password</a>
                     </form>
                 </div>
             </div>
