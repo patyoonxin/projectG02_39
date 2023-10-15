@@ -150,7 +150,7 @@
                   <b><label for="username">Username</label></b>
                   <input class="form-control" id="username" name="username" placeholder="Choose a unique Username" type="text" required minlength="3" maxlength="11"
 				  required pattern="[A-Za-z0-9]+" pattern="[^\s]+">
-				  <span style="color:#777;font-size:12px;">*Usename cannot include spaces and symbols </span>
+				  <span style="color:#777;font-size:12px;">*Username cannot include spaces and symbols </span>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -266,7 +266,7 @@
                 </div>
                 <div class="form-group">
                     <b><label for="email">Email:</label></b>
-                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" required>
+                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" disabled>
                 </div>
                 <div class="form-group row my-0">
                     <div class="form-group col-md-6 my-0">
@@ -282,7 +282,7 @@
                         <b><label for="userType">Type:</label></b>
                         <select name="userType" id="userType" class="custom-select browser-default" required>
                         <?php 
-                            if($userType == 1) {
+                            if($userType == 0) {
                         ?>
                             <option value="0">User</option>
                            

@@ -67,10 +67,10 @@ if (isset($_POST['register_btn'])) {
     $check_email_query = "SELECT email FROM users WHERE email='$email'";
     $check_email_query_run = mysqli_query($con, $check_email_query);
 
-    //if (mysqli_num_rows($check_email_query_run) > 0) {
-       // $showError = "Email Id already Exist";
-       // header("Location: /DailyFreshOrderingSystem/index.php?signupsuccess=false&error=$showError");
-    //} else {
+    if (mysqli_num_rows($check_email_query_run) > 0) {
+        $showError = "Email Id already Exist";
+        header("Location: /DailyFreshOrderingSystem/index.php?signupsuccess=false&error=$showError");
+    } else {
 		// Check whether this username exists
 		$existSql = "SELECT * FROM `users` WHERE username = '$username'";
 		$result = mysqli_query($con, $existSql);
@@ -104,7 +104,7 @@ if (isset($_POST['register_btn'])) {
 				}  
 			}				
 		
-    //}
+    }
 } else {
     $_SESSION['status'] = "Registration Failed";
     header("Location: /DailyFreshOrderingSystem/index.php?signupsuccess=false&error=$showError");

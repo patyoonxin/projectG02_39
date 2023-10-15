@@ -269,7 +269,7 @@
                 </div>
                 <div class="form-group">
                     <b><label for="email">Email:</label></b>
-                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" required>
+                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" disabled>
                 </div>
                 <div class="form-group row my-0">
                     <div class="form-group col-md-6 my-0">

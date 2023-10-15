@@ -22,7 +22,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = $_POST["password"];
         $cpassword = $_POST["cpassword"];
         
-        // Check whether this username exists
+        $check_email_query = "SELECT email FROM users WHERE email='$email'";
+		$check_email_query_run = mysqli_query($conn, $check_email_query);
+
+    if (mysqli_num_rows($check_email_query_run) > 0) {
+        echo "<script>alert('Failed! Email ID Already Exists');
+                    window.location=document.referrer;
+                </script>";
+    } else {
+		// Check whether this username exists
         $existSql = "SELECT * FROM `users` WHERE username = '$username'";
         $result = mysqli_query($conn, $existSql);
         $numExistRows = mysqli_num_rows($result);
@@ -52,6 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 </script>";
             }
         }
+	}
     }
     if(isset($_POST['editUser'])) {
         $id = $_POST["userId"];

@@ -12,6 +12,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $userId = $row['id'];
         if (password_verify($password, $row['password'])){ 
             	
+			$userType=$row['userType'];
+			if($row['userType']=="0"){
+			
 			if($row['verify_status']=="1"){
 				/*session_start();
 				$_SESSION['authenticated'] = true;
@@ -35,6 +38,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				
 				//$_SESSION['status'] = "Please Verify your Email before Login.";
 				header("location: /DailyFreshOrderingSystem/index.php?loginsuccess=false1");
+			}
+			}
+			else{
+				session_start();
+				$_SESSION['loggedin'] = true;
+				$_SESSION['username'] = $username;
+				$_SESSION['userId'] = $userId;
+				header("location: /DailyFreshOrderingSystem/index.php?loginsuccess=true");
+				exit();
 			}
 			
         } 
