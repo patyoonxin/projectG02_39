@@ -23,9 +23,9 @@
                         <b><label for="phone">Phone No:</label></b>
                         <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon">+91</span>
+                            <span class="input-group-text" id="basic-addon">+60</span>
                         </div>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="xxxxxxxxxx" required pattern="[0-9]{10}" maxlength="10">
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="xxxxxxxxxx" required pattern="[0-9]+" minlength="9" maxlength="10">
                         </div>
                     </div>
                     <div class="form-group col-md-6 mb-0">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="form-group">
                     <b><label for="password">Password:</label></b>    
-                    <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="21" data-toggle="password">
+                    <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password" required minlength="4" maxlength="14" data-toggle="password">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

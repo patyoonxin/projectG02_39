@@ -99,29 +99,29 @@
                     <div class="pt-4 border bg-light rounded p-3">
                         <h5 class="mb-3 text-uppercase font-weight-bold text-center">Order summary</h5>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 bg-light">Total Price<span>Rs. <?php echo $totalPrice ?></span></li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-light">Shipping<span>Rs. 0</span></li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 bg-light">Total Price<span>RM <?php echo $totalPrice ?></span></li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-light">Shipping<span>RM 0</span></li>
                             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3 bg-light">
                                 <div>
                                     <strong>The total amount of</strong>
                                     <strong><p class="mb-0">(including Tax & Charge)</p></strong>
                                 </div>
-                                <span><strong>Rs. <?php echo $totalPrice ?></strong></span>
+                                <span><strong>RM <?php echo $totalPrice ?></strong></span>
                             </li>
                         </ul>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Cash On Delivery 
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" disabled>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" >
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Online Payment 
                             </label>
                         </div><br>
-                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#checkoutModal">go to checkout</button>
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#checkoutModal">Go to checkout</button>
                     </div>
                 </div>
                 <div class="mb-3">
