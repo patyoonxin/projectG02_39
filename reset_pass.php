@@ -35,12 +35,12 @@ $error = "";
 
                                     <div class="form-group">
                                         <label><strong>Enter New Password:</strong></label>
-                                        <input type="password"  name="pass1" class="form-control"/>
+                                        <input type="password"  name="pass1" class="form-control" minlength="4" maxlength="14"/>
                                     </div>
 
                                     <div class="form-group">
                                         <label><strong>Re-Enter New Password:</strong></label>
-                                        <input type="password"  name="pass2" class="form-control"/>
+                                        <input type="password"  name="pass2" class="form-control" minlength="4" maxlength="14"/>
                                     </div>
                                     <input type="hidden" name="email" value="<?php echo $email; ?>"/>
                                     <div class="form-group">
