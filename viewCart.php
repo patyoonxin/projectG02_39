@@ -109,18 +109,7 @@
                                 <span><strong>RM <?php echo $totalPrice ?></strong></span>
                             </li>
                         </ul>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Cash On Delivery 
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" >
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Online Payment 
-                            </label>
-                        </div><br>
+                        
                         <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#checkoutModal">Go to checkout</button>
                     </div>
                 </div>

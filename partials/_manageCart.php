@@ -46,15 +46,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $address2 = $_POST["address1"];
         $phone = $_POST["phone"];
         $zipcode = $_POST["zipcode"];
-        $password = $_POST["password"];
+        //$password = $_POST["password"];
+		$paymentMode = $_POST["paymentMode"];
+		$payment_id = $_POST["payment_id"];
         $address = $address1.", ".$address2;
         
         $passSql = "SELECT * FROM users WHERE id='$userId'"; 
         $passResult = mysqli_query($conn, $passSql);
         $passRow=mysqli_fetch_assoc($passResult);
         $userName = $passRow['username'];
-        if (password_verify($password, $passRow['password'])){ 
-            $sql = "INSERT INTO `orders` (`userId`, `address`, `zipCode`, `phoneNo`, `amount`, `paymentMode`, `orderStatus`, `orderDate`) VALUES ('$userId', '$address', '$zipcode', '$phone', '$amount', '0', '0', current_timestamp())";
+       // if (password_verify($password, $passRow['password'])){ 
+            $sql = "INSERT INTO `orders` (`userId`, `address`, `zipCode`, `phoneNo`, `amount`, `paymentMode`, `payment_id`, `orderStatus`, `orderDate`) VALUES ('$userId', '$address', '$zipcode', '$phone', '$amount', '$paymentMode', '$payment_id', '0', current_timestamp())";
             $result = mysqli_query($conn, $sql);
             $orderId = $conn->insert_id;
             if ($result){
@@ -68,18 +70,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
                 $deletesql = "DELETE FROM `viewcart` WHERE `userId`='$userId'";   
                 $deleteresult = mysqli_query($conn, $deletesql);
-                echo '<script>alert("Thanks for ordering with us. Your order id is ' .$orderId. '.");
+                
+				if($paymentMode==0){
+				echo '<script>alert("Thanks for ordering with us. Your order id is ' .$orderId. '.");
                     window.location.href="http://localhost/DailyFreshOrderingSystem/index.php";  
                     </script>';
                     exit();
+				}else{
+					echo 201;
+				}
             }
-        } 
-        else{
-            echo '<script>alert("Incorrect Password! Please enter correct Password.");
-                    window.history.back(1);
-                    </script>';
-                    exit();
-        }    
+        //} 
+        //else{
+           // echo '<script>alert("Incorrect Password! Please enter correct Password.");
+                    //window.history.back(1);
+                    //</script>';
+                    //exit();
+        //}    
     }
     if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
     {

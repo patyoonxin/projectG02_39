@@ -40,12 +40,13 @@
                         $amount = $row['amount'];
                         $orderDate = $row['orderDate'];
                         $paymentMode = $row['paymentMode'];
+						$payment_id = $row['payment_id'];
 
                         if($paymentMode == 0) {
                             $paymentMode = "Cash on Delivery";
                         }
                         else {
-                            $paymentMode = "Online";
+                            $paymentMode = "Paypal";
                         }
                         $orderStatus = $row['orderStatus'];
                         $counter++;
