@@ -19,8 +19,9 @@
                     <th>User Id</th>
                     <th>Address</th>
                     <th>Phone No</th>
-                    <th>Amount</th>						
+                    <th>Amount(RM)</th>						
                     <th>Payment Mode</th>
+				
                     <th>Order Date</th>
                     <th>Status</th>						
                     <th>Items</th>
@@ -40,10 +41,11 @@
                         $amount = $row['amount'];
                         $orderDate = $row['orderDate'];
                         $paymentMode = $row['paymentMode'];
-						$payment_id = $row['payment_id'];
+						//$payment_id = $row['payment_id'];
 
                         if($paymentMode == 0) {
                             $paymentMode = "Cash on Delivery";
+							
                         }
                         else {
                             $paymentMode = "Paypal";
@@ -58,7 +60,8 @@
                                 <td>' . $phoneNo . '</td>
                                 <td>' . $amount . '</td>
                                 <td>' . $paymentMode . '</td>
-                                <td>' . $orderDate . '</td>
+                               
+								<td>' . $orderDate . '</td>
                                 <td><a href="#" data-toggle="modal" data-target="#orderStatus' . $orderId . '" class="view"><i class="material-icons">&#xE5C8;</i></a></td>
                                 <td><a href="#" data-toggle="modal" data-target="#orderItem' . $orderId . '" class="view" title="View Details"><i class="material-icons">&#xE5C8;</i></a></td>
                             </tr>';

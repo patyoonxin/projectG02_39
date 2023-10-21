@@ -19,7 +19,7 @@
                     <th>User Id</th>
                     <th>Address</th>
                     <th>Phone No</th>
-                    <th>Amount</th>						
+                    <th>Amount(RM)</th>						
                     <th>Payment Mode</th>
                     <th>Order Date</th>
                     <th>Status</th>						
