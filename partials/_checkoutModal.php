@@ -46,6 +46,7 @@ include '_dbconnect.php';
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     <input type="hidden" name="amount" value="<?php echo $totalPrice ?>">
 					<input type="hidden" name="paymentMode" value="0">
+					<input type="hidden" name="payment_id" value="0">
                     <button type="submit" name="checkout" class="btn btn-success">Order by COD</button>
 					<input type="hidden" name="amount" value="<?php echo $totalPrice ?>">
 					<div id="paypal-button-container" class="mt-2" ></div>
