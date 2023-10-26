@@ -31,7 +31,7 @@ include '_dbconnect.php';
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon">+60</span>
                         </div>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="xxxxxxxxxx" required pattern="[0-9]+" minlength="9" maxlength="10">
+                        <input type="text" class="form-control" id="phone1" name="phone1" placeholder="xxxxxxxxxx" required pattern="[0-9]{9-10}" minlength="9" maxlength="10">
                         </div>
 						<small class="text-danger phone"></small>
                     </div>
@@ -48,7 +48,7 @@ include '_dbconnect.php';
 					<input type="hidden" name="paymentMode" value="0">
 					<input type="hidden" name="payment_id" value="0">
                     <button type="submit" name="checkout" class="btn btn-success">Order by COD</button>
-					<input type="hidden" name="amount" value="<?php echo $totalPrice ?>">
+					<input type="hidden" id="amount" name="amount" value="<?php echo $totalPrice ?>">
 					<div id="paypal-button-container" class="mt-2" ></div>
                 </div>
             </form>
@@ -70,7 +70,7 @@ include '_dbconnect.php';
 				
 				var address = $('#address').val();
 				var address1 = $('#address1').val();
-				var phone = $('#phone').val();
+				var phone1 = $('#phone1').val();
 				var zipcode = $('#zipcode').val();
 				var password = $('#password').val();
 
@@ -87,6 +87,12 @@ include '_dbconnect.php';
 					$('.address1').text("");
 				}
 				
+				if(phone1.length==0){
+					$('.phone').text("*This field is required.");
+				}else{
+					$('.phone').text("");
+				}
+				
 				if(zipcode.length==0){
 					$('.zipcode').text("*This field is required.");
 				}else{
@@ -94,7 +100,7 @@ include '_dbconnect.php';
 				}
 				
 				
-				if (address.length==0 || address1.length==0 || zipcode.length==0)
+				if (address.length==0 || address1.length==0 || zipcode.length==0 || phone1.length==0)
 				{
 					return false;
 				}
@@ -105,7 +111,7 @@ include '_dbconnect.php';
 				return actions.order.create({
 					purchase_units: [{
 						amount:{
-							value: '0.1'//'<?= $totalPrice ?>'
+							value: '<?= $totalPrice ?>'
 						}
 					}]
 				});
@@ -119,16 +125,18 @@ include '_dbconnect.php';
 			const transaction = orderData.purchase_units[0].payments.captures[0];
 			//alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
 			
+			var amount= $('#amount').val();
 			var address = $('#address').val();
 			var address1 = $('#address1').val();
-			var phone = $('#phone').val();
+			var phone1 = $('#phone1').val();
 			var zipcode = $('#zipcode').val();
 			var password = $('#password').val();
 			
 			var data = {
+				'amount': amount,
 				'address': address,
 				'address1': address1,
-				'phone': phone,
+				'phone1': phone1,
 				'zipcode': zipcode,
 				//'address': address1+address2,
 				'paymentMode': 1,
@@ -140,17 +148,21 @@ include '_dbconnect.php';
 				method: "POST",
 				url: "partials/_manageCart.php",
 				data: data,
-				success: function (response){
-					if (response==201){
-						alert("Thanks for ordering with us. Your order id is ' .$orderId. '.");
-						window.location.href="http://localhost/DailyFreshOrderingSystem/index.php";  
-					}else{
-						console.log(response);
-					}
-				}
+				//success: function (response){
+					//if (response==201){
+						//alert("Thanks for ordering with us. Your order id is ' .$orderId. '.");
+						//window.location.href="http://localhost/DailyFreshOrderingSystem/index.php";  
+					//}
+				//}
 			});
 
 			
+		
+		
+			return actions.order.capture().then(function(details){
+				window.location.href="http://localhost/DailyFreshOrderingSystem/index.php";  
+				header("location: /DailyFreshOrderingSystem/index.php?ordersuccess=true");
+			})
 		});
 		
 		}

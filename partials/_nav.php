@@ -124,5 +124,12 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
               <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
             </div>';
     }
+	if(isset($_GET['ordersuccess'])=="true") {
+      echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+              <strong>Success!</strong> Order Successful! Please check your order ID in Your Orders Page.
+              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
+            </div>';
+    }
+	
 ?>
 

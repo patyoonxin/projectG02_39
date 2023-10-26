@@ -44,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $amount = $_POST["amount"];
         $address1 = $_POST["address"];
         $address2 = $_POST["address1"];
-        $phone = $_POST["phone"];
+        $phone = $_POST["phone1"];
         $zipcode = $_POST["zipcode"];
         //$password = $_POST["password"];
 		$paymentMode = $_POST["paymentMode"];
@@ -71,14 +71,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 $deletesql = "DELETE FROM `viewcart` WHERE `userId`='$userId'";   
                 $deleteresult = mysqli_query($conn, $deletesql);
                 
-				if($paymentMode==0){
+				//if($paymentMode==0){
 				echo '<script>alert("Thanks for ordering with us. Your order id is ' .$orderId. '.");
                     window.location.href="http://localhost/DailyFreshOrderingSystem/index.php";  
                     </script>';
                     exit();
-				}else{
-					echo 201;
-				}
+				//}else{
+					//echo 201;
+				//}
             }
         //} 
         //else{

@@ -45,7 +45,7 @@
                             $paymentMode = "Cash on Delivery";
                         }
                         else {
-                            $paymentMode = "Online";
+                            $paymentMode = "Paypal";
                         }
                         $orderStatus = $row['orderStatus'];
                         $counter++;
