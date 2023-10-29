@@ -160,7 +160,7 @@ include '_dbconnect.php';
 		
 		
 			return actions.order.capture().then(function(details){
-				window.location.href="http://localhost/DailyFreshOrderingSystem/index.php";  
+				window.location.href="http://localhost/DailyFreshOrderingSystem/paymentSuccess.php";  
 				header("location: /DailyFreshOrderingSystem/index.php?ordersuccess=true");
 			})
 		});

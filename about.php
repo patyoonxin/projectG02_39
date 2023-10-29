@@ -201,11 +201,11 @@
           <h2>Our Team</h2>
         </div>
 
-        <div class="row" style="padding-left: 280px;">
+        <div class="row" style="padding-left: 200px;">
 
-         <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+         <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.1s">
             <div class="member">
-              <img src="assets/img/team/leader2.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <img src="assets/img/team/leader2.jpg" class="img-fluid" alt="" style="height: auto;width:100%;">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Leader</h4>
@@ -220,7 +220,7 @@
 
           <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.2s">
             <div class="member">
-              <img src="assets/img/team/team-8.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <img src="assets/img/team/team-8.jpg" class="img-fluid" alt="" style="height: auto;width:100%;">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Front-Chef</h4>
@@ -234,7 +234,7 @@
 
           <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.2s">
             <div class="member">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="" style="height: auto;width:100%;">
               <div class="member-info">
                 <div class="member-info-content">
                  <h4>Back-Chef</h4>
@@ -246,11 +246,11 @@
             </div>
           </div>
 		 </div>
-		<div class="row" style="padding-left: 280px;">
+		<div class="row" style="padding-left: 200px;">
 
-         <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+         <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.1s">
             <div class="member">
-              <img src="assets/img/team/team-9.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <img src="assets/img/team/team-9.jpg" class="img-fluid" alt="" style="height: auto;width:100%;">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Co-Leader</h4>
@@ -261,9 +261,9 @@
               </div>
             </div>
           </div>
-			<div class="col-xl-3 col-lg- col-md-6" data-wow-delay="0.1s">
+			<div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.1s">
             <div class="member">
-              <img src="assets/img/team/amirul.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <img src="assets/img/team/amirul.jpg" class="img-fluid" alt="" style="height: auto;width:100%;">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Staff</h4>
@@ -276,7 +276,7 @@
           </div>
 		  <div class="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0.1s">
             <div class="member">
-              <img src="assets/img/team/iman.jpg" class="img-fluid" alt="" style="height: 250px;width: 250px;">
+              <img src="assets/img/team/iman.jpg" class="img-fluid" alt="" style="height: auto;width:100%;">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Staff</h4>
