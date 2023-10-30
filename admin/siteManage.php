@@ -9,7 +9,7 @@
                     $contact1 = $row['contact1'];
                     $contact2 = $row['contact2'];
 
-echo '<div class="container-fluid" style="padding-left: 470px;margin-top:98px">
+echo '<div class="container-fluid" style="padding-left: 270px;margin-top:98px">
 	<div class="card col-lg-6 p-0">
         <div class="title" style="background-color: rgb(111 202 203);">
             <em><h2 class="text-center" style="margin-top: 11px;">' .$systemName. '</h2></em>

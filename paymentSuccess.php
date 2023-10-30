@@ -42,7 +42,7 @@
         <i class="checkmark">✓</i>
       </div>
         <h1>Success</h1> 
-        <p>We received your PayPal purchase request;<br/> Please back to your homepage and check for your order!</p>
+        <p>We received your PayPal purchase request;<br/> Please go back to your homepage and check for your orders!</p>
       </div>
     </body>
 </html>

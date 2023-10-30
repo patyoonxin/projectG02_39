@@ -6,7 +6,7 @@ include ('header.php');
 include ('header.php');	
 
 ?>
-
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <div class="py-5">
 	<div class="container">
 		<div class="row justify-content-center">

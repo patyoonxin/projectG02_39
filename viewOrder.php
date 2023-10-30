@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            
+            <div style="overflow-x:auto;">
             <table class="table table-striped table-hover text-center">
                 <thead>
                     <tr>
@@ -204,6 +204,7 @@
                     ?>
                 </tbody>
             </table>
+			</div>
         </div>
     </div> 
 

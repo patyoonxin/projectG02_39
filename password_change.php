@@ -3,7 +3,7 @@ session_start();
 $page_title = "Password Change Update";
 include('header.php'); // Include your header file
 ?>
-
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <div class="py-5">
     <div class="container">
         <div class="row justify-content-center">

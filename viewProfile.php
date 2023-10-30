@@ -151,7 +151,7 @@
 
         ?>
         <div class="row">
-            <div class="jumbotron p-3 mb-3" style="display: flex;justify-content: center;width: 28%;border-radius: 50px;margin: 0 auto;">
+            <div class="jumbotron p-3 mb-3" style="display: flex;justify-content: center;border-radius: 50px;margin: 0 auto;">
                 <div class="user-info">
                     <img class="rounded-circle mb-3 bg-dark" src="img/person-<?php echo $userId; ?>.jpg" onError="this.src = 'img/profilePic.jpg'" style="width:215px;height:215px;padding:1px;">
                     <form action="partials/_manageProfile.php" method="POST">
@@ -176,7 +176,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content-panel mb-3" style="display: flex;justify-content: center;">
+            <div class="content-panel mb-3" style="display: flex;justify-content: center;padding: 10px;">
                 <div class="border p-3" style="border: 2px solid rgba(0, 0, 0, 0.1);border-radius: 1.1rem;background-color: aliceblue;">
                     <h2 class="title text-center">Profile<span class="pro-label label label-warning"> (<?php echo $userType ?>)</span></h2>
                 
