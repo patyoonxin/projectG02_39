@@ -62,8 +62,8 @@
                         <div class="card" style="width: 18rem;">
                             <img src="img/food-'.$pizzaId. '.jpg" class="card-img-top" alt="image for this item" width="249px" height="270px">
                             <div class="card-body">
-                                <h5 class="card-title">' . substr($pizzaName, 0, 10). '...</h5>
-                                <h6 style="color: #ff0000">RM '.$pizzaPrice. '</h6>
+                                <h5 class="card-title">' . substr($pizzaName, 0, 21). '</h5>
+                                <h6 style="color: #ff0000">RM '.$pizzaPrice. '.00</h6>
                                 <p class="card-text">' . substr($pizzaDesc, 0, 29). '...</p>   
                                 <div class="row justify-content-center">';
                                 if($loggedin){
@@ -73,16 +73,16 @@
                                     if($quaExistRows == 0) {
                                         echo '<form action="partials/_manageCart.php" method="POST">
                                               <input type="hidden" name="itemId" value="'.$pizzaId. '">
-                                              <button type="submit" name="addToCart" class="btn btn-primary mx-2">Add to Cart</button>';
+                                              <button type="submit" name="addToCart" class="btn btn-info mx-2">Add to Cart</button>';
                                     }else {
-                                        echo '<a href="viewCart.php"><button class="btn btn-primary mx-2">Go to Cart</button></a>';
+                                        echo '<a href="viewCart.php"><button class="btn btn-info mx-2">Go to Cart</button></a>';
                                     }
                                 }
                                 else{
-                                    echo '<button class="btn btn-primary mx-2" data-toggle="modal" data-target="#loginModal">Add to Cart</button>';
+                                    echo '<button class="btn btn-info mx-2" data-toggle="modal" data-target="#loginModal">Add to Cart</button>';
                                 }
                             echo '</form>                            
-                                <a href="viewPizza.php?pizzaid=' . $pizzaId . '" class="mx-2"><button class="btn btn-primary">Quick View</button></a> 
+                                <a href="viewPizza.php?pizzaid=' . $pizzaId . '" class="mx-2"><button class="btn btn-info">Quick View</button></a> 
                                 </div>
                             </div>
                         </div>

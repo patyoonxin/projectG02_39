@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2023 at 04:02 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: Oct 30, 2023 at 02:14 AM
+-- Server version: 10.3.16-MariaDB
+-- PHP Version: 7.3.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -174,7 +175,6 @@ INSERT INTO `pizza` (`pizzaId`, `pizzaName`, `pizzaPrice`, `pizzaDesc`, `pizzaCa
 (6, 'Strawberry', 5, 'Comforting embrace of the waffle perfectly complemented by the zesty brightness of the strawberries\n\n', 1, '2021-03-17 21:24:38'),
 (7, 'Chicken Floss', 7, 'Balance of sweet, salty, and savory flavors, with a subtle smokiness from the roasting process', 2, '2021-03-17 21:38:13'),
 (8, 'Cocoa Deluxe ', 7, 'Deep, bittersweet essence of premium cocoa\n', 2, '2021-03-17 21:37:21'),
-(9, 'Japanese BBQ', 7, 'Grilling with the rich flavors of marinated meats', 2, '2021-03-17 21:40:58'),
 (10, 'Pandan Kaya', 7, 'Enjoyed for its rich, creamy texture and distinctive pandan flavor.', 2, '2021-03-17 21:41:49'),
 (11, 'Nyonya Coconut', 7, 'Perfect balance of sweet, savory, spicy, and sour flavors', 2, '2021-03-17 21:39:49'),
 (12, 'Original', 4, 'Classic one for you', 3, '2021-03-17 21:45:34'),
@@ -205,7 +205,8 @@ INSERT INTO `pizza` (`pizzaId`, `pizzaName`, `pizzaPrice`, `pizzaDesc`, `pizzaCa
 (37, 'Iced Milk Tea', 5, 'A sweet treat made from our delicious signature syrup, and milk with ice', 7, '2023-10-10 21:02:27'),
 (38, 'Hot Chocolate', 4, 'A sweet treat made from our delicious signature syrup and milk', 8, '2023-10-10 08:16:29'),
 (39, 'Hot White Coffee', 4, 'A sweet treat made from our delicious signature syrup and milk', 8, '2023-10-10 10:59:47'),
-(40, 'Hot Milk Tea', 4, 'A sweet treat made from our delicious signature syrup and milk', 8, '2023-10-10 21:10:05');
+(40, 'Hot Milk Tea', 4, 'A sweet treat made from our delicious signature syrup and milk', 8, '2023-10-10 21:10:05'),
+(71, 'JAPANESE', 5, 'kgfhfl', 2, '2023-10-11 15:09:02');
 
 -- --------------------------------------------------------
 
@@ -283,7 +284,7 @@ CREATE TABLE `users` (
   `lastName` varchar(21) NOT NULL,
   `email` varchar(35) NOT NULL,
   `phone` bigint(20) NOT NULL,
-  `userType` enum('0','1') NOT NULL DEFAULT '0' COMMENT '0=user\r\n1=admin',
+  `userType` enum('0','1','2') NOT NULL DEFAULT '0' COMMENT '0=user1=admin2=staff',
   `password` varchar(255) NOT NULL,
   `verify_token` varchar(255) NOT NULL,
   `verify_status` tinyint(2) NOT NULL DEFAULT 0 COMMENT '0=no, 1=yes',
@@ -303,12 +304,17 @@ INSERT INTO `users` (`id`, `username`, `firstName`, `lastName`, `email`, `phone`
 (6, 'zuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '0', 0, NULL, '2023-09-12 16:57:06'),
 (7, '', '', '', 'nrzulykha1501@gmail.com', 0, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '0bc4f51931be6f79456df29e6ecf8788', 0, NULL, '2023-09-12 22:06:34'),
 (11, 'zuuu', 'Nurzulaikha', 'Mohd Isa', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '', 0, NULL, '2023-09-21 18:39:15'),
-(14, 'alees', 'alees', 'ayuni', 'yayaysriiy@gmail.com', 123402506, '0', '$2y$10$Ert3BcOrY/tCooAi7t.dj.IQmElSQz3no2bOpRVdVkge56hUBoipC', '4cbc6d4e741770f0fd7320680ebd0d5e', 1, NULL, '2023-09-25 09:59:25'),
+(14, 'alees', 'alees', 'ayuni', 'yayaysriiy@gmail.com', 123402506, '0', '$2y$10$bo2QDwpfn6Rn//QL/n/EEO9H5s3x880VmX5JYMfjY6Ewj1JamsFWO', '4cbc6d4e741770f0fd7320680ebd0d5e', 1, NULL, '2023-09-25 09:59:25'),
 (15, 'amira', 'nur', 'amira', 'rajanurallea@gmail.com', 1234567893, '0', '$2y$10$22q./tLf5OPROtZFbD0VlOlEYgwhNCh1b4WqRFhxGctzVuAfIemt2', 'bb59fe4317abfa59ca9c86193822175f', 0, NULL, '2023-09-25 10:31:42'),
 (16, 'yayayusri', 'Raja ', 'Nur Allea', 'rajanurallea@gmail.com', 1212340250, '1', '$2y$10$Oi6g5nqJSfwPwfIVwpaX9.PXfxVLn33fN0BxLvgDA2ciowAh8Yxvm', '', 0, NULL, '2023-09-25 21:46:12'),
 (17, 'zulaikhaz', 'NURZULAIKHA', 'ISA', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$YwzMxSrocevFVEBAqM7dteupjmG5DhTWxcLhyFZ3kgkP.FbmhnIby', '33e711c8b8f773785e9b9227518eede6', 1, NULL, '2023-10-01 23:44:45'),
 (18, 'Try', 'Cuba', 'Test', 'zulaikhazaruddin20@gmail.com', 12, '0', '$2y$10$47/V.P6GUUwOZlfuRNLQkeWvQbJwc63u7UxF26Tw091BwdbubR7fy', '9762309f9c1218570f1ff50054de14f2', 0, NULL, '2023-10-05 23:18:09'),
-(19, 'zzulaikhaaz', 'NURZULAIKHA', 'ISA', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$EkiTYdA4hgaBXY9pTh5qteDnUmLAyoroAsT0h9nbCrDlx3gOK9BV.', '35355b606178092f2b100e2f17b03e43', 1, NULL, '2023-10-08 16:27:00');
+(19, 'zzulaikhaaz', 'NURZULAIKHA', 'ISA', 'nrzulykha1501@gmail.com', 192230159, '0', '$2y$10$EkiTYdA4hgaBXY9pTh5qteDnUmLAyoroAsT0h9nbCrDlx3gOK9BV.', '35355b606178092f2b100e2f17b03e43', 1, NULL, '2023-10-08 16:27:00'),
+(20, 'ikha', 'nurr', 'zulaikha', 'yayaysriiy@gmail.com', 1212340250, '2', '$2y$10$bo2QDwpfn6Rn//QL/n/EEO9H5s3x880VmX5JYMfjY6Ewj1JamsFWO', '', 0, NULL, '2023-10-11 14:40:56'),
+(21, 'zuuuuuu', 'nur', 'zulaikha', 'yayaysriiy@gmail.com', 192230159, '0', '$2y$10$bo2QDwpfn6Rn//QL/n/EEO9H5s3x880VmX5JYMfjY6Ewj1JamsFWO', '5a955698865f388755d8951273030828', 1, NULL, '2023-10-11 14:52:45'),
+(22, 'xinnn', 'yoon', 'xin', 'yayaysriiy@gmail.com', 192230159, '2', '$2y$10$bo2QDwpfn6Rn//QL/n/EEO9H5s3x880VmX5JYMfjY6Ewj1JamsFWO', 'c9f5585defd84ab0683d22a2a1ba0f58', 1, NULL, '2023-10-11 14:55:45'),
+(23, 'ainaa', 'noorr', 'ainaa', 'yayaysriiy@gmail.com', 126132506, '0', '$2y$10$bo2QDwpfn6Rn//QL/n/EEO9H5s3x880VmX5JYMfjY6Ewj1JamsFWO', 'b50b658041f6d7271c2de677f1464072', 1, NULL, '2023-10-11 15:06:04'),
+(25, 'amsyar', 'zarif', 'amsyar', 'dewimahsuri1912@gmail.com', 126132506, '0', '$2y$10$NiTwH.NYCIkjqwLbQSg2AOv9yOlBZV22Hs2wPZVwga4sCTt0frSQ.', '0358e65dacdb38bc250e53e26ed4984b', 1, NULL, '2023-10-23 00:42:20');
 
 -- --------------------------------------------------------
 
@@ -331,7 +337,11 @@ CREATE TABLE `viewcart` (
 INSERT INTO `viewcart` (`cartItemId`, `pizzaId`, `itemQuantity`, `userId`, `addedDate`) VALUES
 (1, 1, 1, 3, '2023-09-12 13:48:18'),
 (2, 1, 1, 17, '2023-10-06 01:39:27'),
-(7, 13, 1, 19, '2023-10-08 16:30:31');
+(7, 13, 1, 19, '2023-10-08 16:30:31'),
+(8, 4, 1, 23, '2023-10-11 15:06:50'),
+(9, 5, 1, 25, '2023-10-23 00:42:59'),
+(10, 25, 1, 25, '2023-10-23 00:43:08'),
+(11, 1, 1, 25, '2023-10-23 10:13:57');
 
 --
 -- Indexes for dumped tables
@@ -452,7 +462,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `pizza`
 --
 ALTER TABLE `pizza`
-  MODIFY `pizzaId` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+  MODIFY `pizzaId` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT for table `signup`
@@ -470,13 +480,13 @@ ALTER TABLE `sitedetail`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(21) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(21) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `viewcart`
 --
 ALTER TABLE `viewcart`
-  MODIFY `cartItemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `cartItemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -32,13 +32,13 @@
           $id = $row['categorieId'];
           $cat = $row['categorieName'];
           $desc = $row['categorieDesc'];
-          echo '<div class="col-xs-3 col-sm-3 col-md-3">
+          echo '<div class="col-xs-3 col-sm-3 col-md-3" >
                   <div class="card" style="width: 18rem;">
                     <img src="img/card-'.$id. '.jpg" class="card-img-top" alt="image for this category" width="249px" height="270px">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="viewPizzaList.php?catid=' . $id . '">' . $cat . '</a></h5>
+                    <div class="card-body" >
+                      <h5 class="card-title" ><a style="color:green;" href="viewPizzaList.php?catid=' . $id . '">' . $cat . '</a></h5>
                       <p class="card-text">' . substr($desc, 0, 30). '... </p>
-                      <a href="viewPizzaList.php?catid=' . $id . '" class="btn btn-primary">View All</a>
+                      <a href="viewPizzaList.php?catid=' . $id . '" class="btn btn-info">View All</a>
                     </div>
                   </div>
                 </div>';

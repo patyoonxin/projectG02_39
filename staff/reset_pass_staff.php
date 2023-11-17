@@ -13,7 +13,7 @@ $error = "";
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <?php
-                    include('dbcon_admin.php');
+                    include('dbcon_staff.php');
                     if (isset($_GET["key"]) && isset($_GET["email"]) && isset($_GET["action"]) && ($_GET["action"] == "reset") && !isset($_POST["action"])) {
                         $key = $_GET["key"];
                         $email = $_GET["email"];

@@ -58,7 +58,7 @@ include '_dbconnect.php';
 </div>
 
 <!-- Replace the "test" client-id value with your client-id -->
-    <script src="https://www.paypal.com/sdk/js?client-id=ASIMg1fITwry2EHK31X5Pm2znzEz81EmyEVhx_Kc2ZZcoKFCOhdgKknvwjgX0wImG94_u-xfMCsNJD7j&disable-funding=credit,card"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=ASIMg1fITwry2EHK31X5Pm2znzEz81EmyEVhx_Kc2ZZcoKFCOhdgKknvwjgX0wImG94_u-xfMCsNJD7j&currency=MYR&disable-funding=credit,card"></script>
 	
 	<script>
 		
@@ -73,6 +73,8 @@ include '_dbconnect.php';
 				var phone1 = $('#phone1').val();
 				var zipcode = $('#zipcode').val();
 				var password = $('#password').val();
+				//var price1 = $('<?= $totalPrice ?>').val();
+				//var price = price1 / 4.196;
 
 				
 				if(address.length==0){
@@ -111,6 +113,7 @@ include '_dbconnect.php';
 				return actions.order.create({
 					purchase_units: [{
 						amount:{
+							//currency_code: "MYR",
 							value: '<?= $totalPrice ?>'
 						}
 					}]

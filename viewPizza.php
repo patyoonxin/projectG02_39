@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-8 my-4">
                 <h3>' . $pizzaName . '</h3>
-                <h5 style="color: #ff0000">RM '.$pizzaPrice. '</h5>
+                <h5 style="color: #ff0000">RM '.$pizzaPrice. '.00</h5>
                 <p class="mb-0">' .$pizzaDesc .'</p>';
 
                 if($loggedin){
@@ -49,13 +49,13 @@
                     if($quaExistRows == 0) {
                         echo '<form action="partials/_manageCart.php" method="POST">
                               <input type="hidden" name="itemId" value="'.$pizzaId. '">
-                              <button type="submit" name="addToCart" class="btn btn-primary my-2">Add to Cart</button>';
+                              <button type="submit" name="addToCart" class="btn btn-info my-2">Add to Cart</button>';
                     }else {
-                        echo '<a href="viewCart.php"><button class="btn btn-primary my-2">Go to Cart</button></a>';
+                        echo '<a href="viewCart.php"><button class="btn btn-info my-2">Go to Cart</button></a>';
                     }
                 }
                 else{
-                    echo '<button class="btn btn-primary my-2" data-toggle="modal" data-target="#loginModal">Add to Cart</button>';
+                    echo '<button class="btn btn-info my-2" data-toggle="modal" data-target="#loginModal">Add to Cart</button>';
                 }
                 echo '</form>
                 <h6 class="my-1"> View </h6>

@@ -274,7 +274,7 @@
                     }
                     echo '<script>document.getElementById("totalMessage").innerHTML = "' .$count. '";</script>';
                     if($count==0) {
-                      ?><script> document.getElementById("messagebd").innerHTML = '<div class="my-1">you have not recieve any message.</div>';</script> <?php
+                      ?><script> document.getElementById("messagebd").innerHTML = '<div class="my-1">You have not recieved any message.</div>';</script> <?php
                     }
                 ?>
                 </tbody>
@@ -323,7 +323,7 @@
                               </tr>';
                     }                
                     if($count==0) {
-                      ?><script> document.getElementById("bd").innerHTML = '<div class="my-1">you have not contacted us.</div>';</script> <?php
+                      ?><script> document.getElementById("bd").innerHTML = '<div class="my-1">You have not contacted us.</div>';</script> <?php
                     }    
                 ?>
                 </tbody>
